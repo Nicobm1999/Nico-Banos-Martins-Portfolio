@@ -1,0 +1,132 @@
+﻿@model Tarea4.ViewModels.PokemonDetailsViewModel
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<audio autoplay>
+    <source src="~/audio/1-13. Guide.mp3" type="audio/mp3">
+    Tu navegador no soporta la etiqueta de audio.
+</audio>
+
+
+
+<div class="container w-50 card-team shadow my-0 mx-auto">
+    <div class="row d-flex justify-content-start w-50 h-50">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-pokemon-list w-25 shadow">
+            <div class="row ">
+                <div class="col-5  d-flex align-items-center justify-content-end">
+                    <span class="material-symbols-outlined ">
+                        undo
+                    </span>
+                </div>
+                <div class="col-7 d-flex align-items-center justify-content-start">
+                    <p class="mb-0">Atrás</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+        <div class="container text-center">
+                <img class="img-fluid" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/@(Model.Pokemon.Numero_Pokedex.ToString("D3")).png" />
+        </div>
+
+        <div class="container text-center">
+                <p class="title text-uppercase fw-bolder">@Model.Pokemon.Nombre</p>
+        </div>
+        <hr />
+
+       
+          
+                <div class="row text-center ">
+                    <div class="col">
+                        <p class="fs-6 th shadow">Nº POKÉDEX</p>
+                    </div>
+                    <div class="col">
+                        <p class="fs-6 th shadow">PESO</p>
+                    </div>
+                    <div class="col">
+                        <p class="fs-6 th shadow">ALTURA</p>
+                    </div>
+                </div>
+           
+                <div class="row mt-1 text-center">
+                    <div class="col">
+                        <p class="fs-6 moves">Nº @Model.Pokemon.Numero_Pokedex</p>
+                    </div>
+                    <div class="col">
+                        <p class="fs-6 moves">@Model.Pokemon.Peso Kg</p>
+                    </div>
+                    <div class="col">
+                        <p class="fs-6 moves">@Model.Pokemon.Altura m</p>
+                    </div>
+                </div>
+      
+
+        <hr/>
+
+        <div class="row text-center my-3">
+            <div class="col">
+                <p class="fs-6 th shadow">INVOLUCIÓN</p>
+                @foreach (var involucion in Model.Involutions)
+                {
+                    <p class="moves  text-uppercase fw-bold">@involucion.Nombre</p>
+                }
+            </div>
+            <div class="col">
+                <p class="fs-6 th shadow">EVOLUCIÓN</p>
+                @foreach (var evolucion in Model.Evolutions)
+                {
+                    <p class="moves text-uppercase fw-bold">@evolucion.Nombre</p>
+                }
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col">
+            <p class="fs-6 th  shadow">MOVIMIENTOS</p>
+            </div>
+        </div>
+        
+        <div class="container moves text-center">
+            <div class="row justify-content-center mb-3 text-center fw-bold">
+                <div class="col">NOMBRE</div>
+                <div class="col">POTENCIA</div>
+                <div class="col">PRECISIÓN</div>
+                <div class="col">PP</div>
+                <div class="col">PRIORIDAD</div>
+            </div>
+            <hr class="bg-dark" />
+                @foreach (var movimiento in Model.Moves)
+                {
+                    <div class="row text-center">
+                        <div class="col">@movimiento.Nombre</div>
+                        <div class="col border-start border-tertiary">@movimiento.Potencia</div>
+                    <div class="col  border-start border-tertiary">@movimiento.Precision_Mov</div>
+                    <div class="col  border-start border-tertiary">@movimiento.PP</div>
+                        <div class="col  border-start border-tertiary">@movimiento.Prioridad</div>
+                    </div>
+                }
+        </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

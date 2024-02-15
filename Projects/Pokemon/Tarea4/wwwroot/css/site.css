@@ -1,0 +1,182 @@
+*{
+    font-family: Nova Square;
+    caret-color: transparent;
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.bg-fuji {
+    background-image: url('/imgs/fuji.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; 
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.title{
+    
+    border-bottom: 5px solid black;
+    border-radius: 0.5rem;
+    font-style:oblique;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.vs {
+    background: white;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    border-radius: 0.5rem;
+    font-style: oblique;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(2px);
+    }
+
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+
+    75% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(2px);
+    }
+}
+
+.vib:hover {
+  
+    animation: vibrate 0.3s ease;
+}
+
+.card-team {
+    border: 4px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-bottom: none;
+    border-top: none;
+    background: white;
+    background: rgba(255,255,255,0.7);
+}
+
+.big-card {
+    border: 4px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-bottom: none;
+    border-top: none;
+    background: rgba(250,250,250,0.2);
+}
+
+.card-list {
+    border: 3px solid black;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    border-top: none;
+    background: rgba(255,255,255,0.8);
+}
+
+.bread {
+    border: 3px solid black;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    border-top: none;
+    background: rgba(255,255,255,0.6);
+}
+
+.vs {
+    background: rgba(255,255,255,0.6);
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    border-radius: 0.5rem;
+    font-style: oblique;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.btn-pokemon-home {
+    background-color: #EA0012;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btn-pokemon-home:hover {
+    color: white;
+    border: 2px solid black;
+}
+
+
+.btn-pokemon-list {
+    background-color: #EA0012;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btn-pokemon-list:hover {
+    color: white;
+    border: 2px solid black;
+}
+
+.th {
+    background-color: #EA0012;
+    color: white;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    padding: 2%;
+}
+
+.home-button {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-pokemon-home {
+    background-color: #EA0012;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btn-pokemon-home:hover {
+    color: white;
+    border: 2px solid black;
+}
+
+
+.btn-pokemon-list {
+    background-color: #EA0012;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btn-pokemon-list:hover {
+    color: white;
+    border: 2px solid black;
+}

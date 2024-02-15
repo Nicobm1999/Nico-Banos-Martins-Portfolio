@@ -1,0 +1,135 @@
+﻿@model IEnumerable<Tarea4.Models.Pokemon>
+
+@{
+    ViewData["Title"] = "ListaPokemon";
+}
+
+<audio autoplay>
+    <source src="~/audio/1-03. Professor Oak.mp3" type="audio/mp3">
+    Tu navegador no soporta la etiqueta de audio.
+</audio>
+
+<div class="container w-100 my-0 mx-auto big-card">
+    
+    <div class=" container p-2 ">
+        <div class="row d-flex justify-content-start w-50 h-50">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-pokemon-list w-25 shadow">
+                <div class="row ">
+                    <div class="col-5  d-flex align-items-center justify-content-end">
+                        <span class="material-symbols-outlined ">
+                            undo
+                        </span>
+                    </div>
+                    <div class="col-7 d-flex align-items-center justify-content-start">
+                        <p class="mb-0">Atrás</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+       
+        <div class="container-fluid  p-3 w-100 ">
+            <div class="container bg-rojo rounded-3 ">
+
+                <p class="  my-0 text-center title">LISTA POKÉMON</p>
+                <hr />
+
+
+            </div>
+       Filtros activados : @ViewBag.Filter
+        <div class="row">
+            <div class="col-3 p-4">
+            <form asp-action="FilterPokemonList" asp-controller="Pokemon" method="get" class="card-team text-center w-100">
+
+                <div class="container g-5 text-start">
+                    <div class="row">
+                        <div data-mdb-input-init class="form-outline mb-1">
+                            <label class="form-label" for="tipo">Tipo</label>
+
+                            <select name="tipo" class="form-control w-100">
+                                <option value="">No filtrar por tipo</option>
+                                <option value="Agua">Agua</option>
+                                <option value="Bicho">Bicho</option>
+                                <option value="Dragón">Dragón</option>
+                                <option value="Eléctrico">Eléctrico</option>
+                                <option value="Fantasma">Fantasma</option>
+                                <option value="Fuego">Fuego</option>
+                                <option value="Hielo">Hielo</option>
+                                <option value="Lucha">Lucha</option>
+                                <option value="Normal">Normal</option>
+                                <option value="Planta">Planta</option>
+                                <option value="Psíquico">Psíquico</option>
+                                <option value="Roca">Roca</option>
+                                <option value="Tierra">Tierra</option>
+                                <option value="Veneno">Veneno</option>
+                                <option value="Volador">Volador</option>
+                            </select>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div data-mdb-input-init class="form-outline mb-1">
+                                <label class="form-label" for="tipo">Peso</label>
+                                <select name="peso" class="form-control w-100">
+                                    <option value="">No filtrar por peso</option>
+                                    <option value="Ascendente">Ascendente</option>
+                                    <option value="Descendente">Descendente</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <div data-mdb-input-init class="form-outline mb-1">
+                                    <label class="form-label" for="tipo">Altura</label>
+                                    <select name="altura" class="form-control w-100">
+                                        <option value="">No filtrar por altura</option>
+                                        <option value="1">> 1 m</option>
+                                        <option value="2">> 2 m</option>
+                                        <option value="3">> 3 m</option>
+                                        <option value="4">> 4 m</option>
+                                        <option value="5">> 5 m</option>
+                                        <option value="6">> 6 m</option>
+                                        <option value="7">> 7 m</option>
+                                        <option value="8">> 8 m</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                </div>
+                <button data-mdb-ripple-init type="submit" class="btn btn-pokemon-list w-50 mt-4">Filtrar</button>
+            </form>
+            </div>
+            
+                <div class="col-9 p-3" style="max-height: 600px; overflow-y: auto; ">
+                    @foreach (var item in Model)
+                    {
+                        <div class="row mt-3 p-3 card-list vib shadow d-flex justify-content-center align-items-center">
+                            <div class="col-1 d-flex align-items-start justify-content-start">
+                                <p class="fs-6 fw-bold">Nº @Html.DisplayFor(modelItem => item.Numero_Pokedex)</p>
+                            </div>
+                            <div class="col-2 d-flex align-items-center">
+                                <img class="w-100 me-3" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/@(item.Numero_Pokedex.ToString("D3")).png" alt="Imagen del Pokémon" />
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <p class="fs-5 text-uppercase fw-bold">@Html.DisplayFor(modelItem => item.Nombre)</p>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <p class="fs-6 fw-bold">@Html.DisplayFor(modelItem => item.Peso) Kg</p>
+                            </div>
+                            <div class="col-1 d-flex align-items-center justify-content-center">
+                                <p class="fs-6 fw-bold">@Html.DisplayFor(modelItem => item.Altura) m</p>
+                            </div>
+                            <div class="col-2 d-flex align-items-center">
+                                <a href="@Url.Action("PokemonDetails", "Pokemon", new { numeroPokedex = @item.Numero_Pokedex })" class="btn btn-pokemon-list mx-1">Detalles</a>
+                            </div>
+                          
+                                <a href="@Url.Action("AddToMyTeam", new { numeroPokedex = @item.Numero_Pokedex })" class="vib col-2 text-decoration-none text-dark fs-6">
+                                    <img class="w-50" src="/imgs/pokeball.png" />  @ViewBag.TeamSlots 
+                                </a>
+                        </div>
+            }
+        </div>
+        </div>
+        </div>
+    </div>
+
+
+    </div>
+

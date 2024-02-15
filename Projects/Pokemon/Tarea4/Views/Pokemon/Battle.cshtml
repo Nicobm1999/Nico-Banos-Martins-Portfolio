@@ -1,0 +1,116 @@
+﻿@model CombateViewModel
+
+@{
+    ViewData["Title"] = "Combate";
+}
+
+
+
+<div class="container w-75 big-card my-0 mx-auto">
+    <div class=" container p-2 ">
+        <div class="row d-flex justify-content-start w-50 h-50">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-pokemon-list w-25 shadow">
+                <div class="row ">
+                    <div class="col-5  d-flex align-items-center justify-content-end">
+                        <span class="material-symbols-outlined ">
+                            undo
+                        </span>
+                    </div>
+                    <div class="col-7 d-flex align-items-center justify-content-start">
+                        <p class="mb-0">Atrás</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="container-fluid">
+
+           
+
+
+            <div class="container pokemon-container  p-3 pt-0">
+                
+                <div class="row my-5 ">
+                    @foreach (var item in Model.Team1)
+                    {
+                        <div class="col-2">
+                            <div class="container card-team vib shadow">
+                                <div class="row justify-content-center"> <img class="w-75" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/@(item.Numero_Pokedex.ToString("D3")).png" alt="Imagen del Pokémon" /></div>
+                                <div class="row text-center text-uppercase mt-2 fw-bold"> <p class="nombre">@Html.DisplayFor(modelItem => item.Nombre)</p></div>
+                                
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="container">
+
+                    <div class="row text-center">
+                        <div class="col"><p class="th shadow ">Nº POKÉMONS</p></div>
+                        <div class="col "><p class="th shadow ">TIPO PREDOMINANTE</p></div>
+                        <div class="col"><p class="th shadow ">PESO MEDIO</p></div>
+                        <div class="col "><p class="th shadow ">ALTURA MEDIA</p></div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col"><p class="card-list">Cantidad de Pokémon [@Model.Num1]</p></div>
+                        <div class="col"><p class="card-list">Tipo Predominante [@Model.TeamType1]</p></div>
+                        <div class="col"><p class="card-list">Peso Medio [@Model.WeightAvg1 Kg]</p></div>
+                        <div class="col "><p class="card-list">Altura Media [@Model.HeightAvg1 m]</p></div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row vs">
+                    <div class="col-7 d-flex align-items-center">
+                        <p class="fs-6  my-0 text-center  "> <img class="" src="/imgs/ash-pika.png" style="width: 18%;" />   Ash Ketchum - VS - @ViewBag.Team2Name  <img class="" src="/imgs/@(ViewBag.Team2Name).png" style="width: 8%;" /></p>
+                    </div>
+                    <div class="col-5 ">
+                        <div class="row">
+                            <p class="th text-center fs-6">¡GANADOR!  </p>
+                        </div>
+
+                        <div class="row"><p class="card-list text-center fs-6">
+                            @Model.Winner  </p></div>
+
+                    </div>
+                </div>
+                <hr />
+                <div class="row my-5 ">
+                    @foreach (var item in Model.Team2)
+                    {
+                        <div class="col-2">
+                            <div class="container card-team vib shadow">
+                                <div class="row justify-content-center"> <img class="w-75" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/@(item.Numero_Pokedex.ToString("D3")).png" alt="Imagen del Pokémon" /></div>
+                                <div class="row text-center text-uppercase mt-2 fw-bold"> <p class="nombre">@Html.DisplayFor(modelItem => item.Nombre)</p></div>
+                               
+                            </div>
+                        </div>
+
+                  
+                      
+                    }
+                </div>
+                <div class="container">
+
+                    <div class="row text-center">
+                        <div class="col"><p class="th shadow ">Nº POKÉMONS</p></div>
+                        <div class="col "><p class="th shadow ">TIPO PREDOMINANTE</p></div>
+                        <div class="col"><p class="th shadow ">PESO MEDIO</p></div>
+                        <div class="col "><p class="th shadow ">ALTURA MEDIA</p></div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col"><p class="card-list">Cantidad de Pokémon [@Model.Num2]</p></div>
+                        <div class="col"><p class="card-list">Tipo Predominante [@Model.TeamType2]</p></div>
+                        <div class="col"><p class="card-list">Peso Medio [@Model.WeightAvg2 Kg]</p></div>
+                        <div class="col "><p class="card-list">Altura Media [@Model.HeightAvg2 m]</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<audio autoplay>
+    <source src="~/audio/1-28. Battle (Vs. Gym Leader).mp3" type="audio/mp3">
+    Tu navegador no soporta la etiqueta de audio.
+</audio>

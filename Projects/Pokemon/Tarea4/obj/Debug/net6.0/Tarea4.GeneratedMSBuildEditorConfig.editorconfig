@@ -1,0 +1,71 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Tarea4
+build_property.RootNamespace = Tarea4
+build_property.ProjectDir = C:\Users\nicol\OneDrive\Escritorio\BañosMartínsNicolásAntonioTarea4 (1)\Tarea4\Tarea4\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\nicol\OneDrive\Escritorio\BañosMartínsNicolásAntonioTarea4 (1)\Tarea4\Tarea4
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Home/BattleMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYXR0bGVNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Pokemon/Battle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxCYXR0bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Pokemon/MyTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxNeVRlYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Pokemon/PokemonDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxQb2tlbW9uRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Pokemon/PokemonList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxQb2tlbW9uTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Pokemon/RandomTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxSYW5kb21UZWFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Escritorio/BañosMartínsNicolásAntonioTarea4 (1)/Tarea4/Tarea4/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jtvclmq0hd

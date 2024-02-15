@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Menú de combate";
+}
+
+
+
+<div class="container w-50 my-0 mx-auto big-card">
+    <div class=" container p-2 ">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <div class="row d-flex justify-content-start w-50 h-50">
+                <a href="@Url.Action("Index", "Home")" class="btn btn-pokemon-list w-25 shadow">
+                    <div class="row ">
+                        <div class="col-5  d-flex align-items-center justify-content-end">
+                            <span class="material-symbols-outlined ">
+                                undo
+                            </span>
+                        </div>
+                        <div class="col-7 d-flex align-items-center justify-content-start">
+                            <p class="mb-0">Atrás</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <div class="container w-50">
+            <img class="w-100 mb-5 " src="~/imgs/pikachu.png" />
+
+        </div>
+        <div class="btn-group-vertical w-100 h-100 mt-5 " role="group" aria-label="Vertical button group">
+        
+            <a href="@Url.Action("Battle", "Pokemon")" class="btn btn-pokemon-home my-1 shadow">Aleatorio Vs Mi Equipo</a>
+
+            <a href="@Url.Action("RandomBattle", "Pokemon")" class="btn btn-pokemon-home my-1 shadow">Aleatorio Vs Aleatorio</a>
+
+
+        </div>
+    </div>
+</div>

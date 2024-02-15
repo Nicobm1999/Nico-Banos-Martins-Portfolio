@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+
+<div class="container text-center my-5  h-50" >
+
+    <img class="w-75 mb-5 vib" src="~/imgs/logopk.png" />
+    <div class="btn-group-vertical w-50 h-100 mt-5 " role="group" aria-label="Vertical button group">
+        <a href="@Url.Action("PokemonList", "Pokemon")" class="btn bip btn-pokemon-home my-1 vib shadow">
+            <div class="row ">
+                <div class="col-5  d-flex align-items-center justify-content-end">
+                    <span class="material-symbols-outlined ">
+                        sort
+                    </span>
+                </div>
+                <div class="col-7 d-flex align-items-center justify-content-start">
+                    <p class="mb-0">Lista de Pokémon</p>
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("RandomTeam", "Pokemon")" class="btn bip btn-pokemon-home my-1 vib shadow">
+            <div class="row ">
+                <div class="col-5  d-flex align-items-center justify-content-end">
+                    <span class="material-symbols-outlined ">
+                        casino
+                    </span>
+                </div>
+                <div class="col-7 d-flex align-items-center justify-content-start">
+                    <p class="mb-0">Generar equipo aleatorio</p>
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("MyTeam", "Pokemon")" class="btn btn-pokemon-home my-1 vib shadow">
+            <div class="row ">
+                <div class="col-5  d-flex align-items-center justify-content-end">
+                    <span class="material-symbols-outlined ">
+                        shield
+                    </span>
+                </div>
+                <div class="col-7 d-flex align-items-center justify-content-start">
+                    <p class="mb-0">Mi equipo</p>
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("BattleMenu", "Home")" class="btn btn-pokemon-home my-1 vib shadow ">
+            <div class="row ">
+            <div class="col-5  d-flex align-items-center justify-content-end">
+                <span class="material-symbols-outlined ">
+                    swords
+                </span>
+            </div>
+                <div class="col-7 d-flex align-items-center justify-content-start">
+                <p class="mb-0">Combate</p>
+           </div>
+            </div>
+           
+        </a>
+
+    </div>
+</div>
+
+<audio autoplay>
+    <source src="~/audio/1-01. Opening.mp3"  type="audio/mp3">
+    Tu navegador no soporta la etiqueta de audio.
+</audio>
