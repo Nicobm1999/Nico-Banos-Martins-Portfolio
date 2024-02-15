@@ -1,0 +1,34 @@
+@import url(header.css);
+@import url(catalog.css);
+@import url(footer.css);
+@import url(animations.css);
+@import url(media-queries.css);
+
+
+/* OTHERS */
+
+@font-face {
+    font-family: 'Bulgari';
+    src: url('/assets/fonts/007\ GoldenEye.ttf') format('truetype'); 
+}
+
+*{
+    caret-color: transparent;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.favorite:hover {
+    color: darkred;
+}
+
+.bolded:hover {
+    font-weight: bold;
+}
+
+.index-btn:hover{
+    opacity: 90%;
+}

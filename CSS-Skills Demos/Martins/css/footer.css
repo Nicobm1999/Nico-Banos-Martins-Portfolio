@@ -1,0 +1,32 @@
+footer{
+    background-color: #1a1a1a;
+    padding: 5rem;
+}
+
+.footer-link{
+    text-decoration: none;
+    position: relative;
+    color: #ffffff; 
+    text-align: center;
+  }
+  
+  .footer-link::after {
+    margin-top: 1rem !important; 
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; 
+    height: 3px; 
+    background-color: #ffffff; 
+    transition: width 0.3s ease; 
+    border-width: 0;
+}
+
+.footer-link:hover::after {
+    width: 100%; 
+    margin: 0;
+}

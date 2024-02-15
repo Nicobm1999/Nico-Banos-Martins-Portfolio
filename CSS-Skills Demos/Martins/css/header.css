@@ -1,0 +1,32 @@
+header {
+  border-bottom: 0.2rem solid;
+  border-color: #212529;
+}
+
+.menu button {
+  text-decoration: none;
+  position: relative;
+  color: #333;
+  text-align: center;
+}
+
+.menu button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #212529;
+  transition: width 0.3s ease;
+  border-width: 0;
+
+}
+
+.menu button:hover::after {
+  width: 100%;
+  margin: 0;
+}
+

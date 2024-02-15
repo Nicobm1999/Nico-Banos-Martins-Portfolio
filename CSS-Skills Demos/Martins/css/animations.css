@@ -1,0 +1,57 @@
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-2px);
+    }
+
+    40% {
+        transform: translateX(2px);
+    }
+
+    60% {
+        transform: translateX(-2px);
+    }
+
+    80% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animated:hover {
+    animation: vibrate 0.5s ease infinite;
+}
+
+@keyframes toright {
+    0% {
+       transform : translateX(-100%);
+    }
+
+    100% {
+       transform : translateX(0);
+    }
+}
+
+.to-right{
+    animation: toright 1s ease ;
+}
+
+@keyframes toleft {
+    0% {
+       transform : translateX(100%);
+    }
+
+    100% {
+       transform : translateX(0);
+    }
+}
+
+.to-left{
+    animation: toleft 1s ease ;
+}

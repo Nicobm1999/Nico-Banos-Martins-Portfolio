@@ -1,0 +1,399 @@
+
+
+/* HEADER MENU */
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". nav1 . nav2 ."
+            ". . . . ."
+            ". nav3 . nav4 ."
+            ". . . . ."
+            " nav5 nav5 nav5 nav5 nav5"
+            ". . . . ."
+    }
+    .nav1 {
+        grid-area: nav1;
+    }
+    .nav2 {
+        grid-area: nav2;
+    }
+    .nav3 {
+        grid-area: nav3;
+    }
+    .nav4 {
+        grid-area: nav4;
+    }
+    .nav5 {
+        grid-area: nav5;
+
+    }
+    .col .row .brand-title{
+        font-size: 4rem;
+        font-family: 'Bulgari', sans-serif;
+    }
+
+    .brand-space{
+        height: 6rem;
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 1fr ;
+        grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . . . . . . . ."
+            ". nav1 . nav2 . nav3 . nav4 ."
+            ". . . nav5 nav5 nav5 . . ."
+            ". . . . . . . . ."
+    }
+    
+    .nav1 {
+        grid-area: nav1;
+    }
+    .nav2 {
+        grid-area: nav2;
+    }
+    .nav3 {
+        grid-area: nav3;
+    }
+    .nav4 {
+        grid-area: nav4;
+    }
+    .nav5 {
+        grid-area: nav5;
+    }
+    .col .row .brand-title{
+        font-size: 6rem;
+        font-family: 'Bulgari', sans-serif;
+    }
+    .brand-space{
+        height: 7rem;
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+   .menu {
+        display: grid;
+        grid-template-columns: 7.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 4fr 3fr 0.3fr ;
+        grid-template-rows: 1fr 2.3fr 0.1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . . . . . . . . . ."
+            ". nav1 . nav2 . nav3 . nav4 . nav5 ."
+            ". . . . . . . . . . ."
+    }
+    .nav1 {
+        grid-area: nav1;
+    }
+    .nav2 {
+        grid-area: nav2;
+    }
+    .nav3 {
+        grid-area: nav3;
+    }
+    .nav4 {
+        grid-area: nav4;
+    }
+    .nav5 {
+        grid-area: nav5;
+    }
+    .col .row .brand-title{
+        font-size: 8rem;
+        font-family: 'Bulgari', sans-serif;
+    }
+    .brand-space{
+        height: 8rem;
+        
+    }
+}
+
+/* FOOTER */
+
+@media screen and (max-width: 1200px) {
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 0.1fr 2.9fr 0.1fr 2.9fr 0.1fr ;
+        grid-template-rows: 0.1fr 2.3fr 2fr 2.3fr 0.1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . . . ."
+            ". footer1 . footer2 ."
+            ". . . . ."
+            ". footer3 . footer4 ."
+            ". . . . ."
+     
+    }
+    .footer1 {
+        grid-area: footer1;
+    }
+
+    .footer2 {
+        grid-area: footer2;
+    }
+
+    .footer3 {
+        grid-area: footer3;
+    }
+
+    .footer4 {
+        grid-area: footer4;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 0.1fr 2.9fr 0.1fr 2.9fr 0.1fr 2.9fr 0.1fr 2.9fr 0.1fr ;
+        grid-template-rows: 0.1fr 2.3fr 0.1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . . . . . . . ."
+            ". footer1 . footer2 . footer3 . footer4 ."
+            ". . . . . . . . ."
+    }
+    .footer1 {
+        grid-area: footer1;
+    }
+    .footer2 {
+        grid-area: footer2;
+    }
+    .footer3 {
+        grid-area: footer3;
+    }
+    .footer4 {
+        grid-area: footer4;
+    }
+}
+
+
+/* CATALOG */
+
+@media screen and (max-width: 768px) {
+
+    .catalog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 2.3fr 0.1fr 2.3fr 0.1fr 2.3fr 0.1fr 2.3fr 0.1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". ."
+            "product1 product2"
+            ". ."
+            "product3 product4"
+            ". ."
+            "product5 product6"
+            ". ."
+            "product7 product8"
+            ". .";
+    }
+    .product1 {
+        grid-area: product1;
+    }
+
+    .product2 {
+        grid-area: product2;
+    }
+
+    .product3 {
+        grid-area: product3;
+    }
+
+    .product4 {
+        grid-area: product4;
+    }
+
+    .product5 {
+        grid-area: product5;
+    }
+
+    .product6 {
+        grid-area: product6;
+    }
+
+    .product7 {
+        grid-area: product7;
+    }
+
+    .product8 {
+        grid-area: product8;
+    }
+
+   
+}
+
+@media screen and (min-width: 768px) {
+
+    .catalog {
+        display: grid;
+        grid-template-columns: 0.1fr 2.9fr 0.1fr 2.9fr 0.1fr 2.9fr 0.1fr;
+        grid-template-rows: 0.1fr 2.3fr 0.15fr 2.3fr 0.15fr 2.3fr 0.1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . . . . . ."
+            ". product1 . product2 . product3 ."
+            ". . . . . . ."
+            ". product4 . product5 . product6 ."
+            ". . . . . . ."
+            ". product7 . product8 . . ."
+            ". . . . . . .";
+    }
+    .product1 {
+        grid-area: product1;
+    }
+
+    .product2 {
+        grid-area: product2;
+    }
+
+    .product3 {
+        grid-area: product3;
+    }
+
+    .product4 {
+        grid-area: product4;
+    }
+
+    .product5 {
+        grid-area: product5;
+    }
+
+    .product6 {
+        grid-area: product6;
+    }
+
+    .product7 {
+        grid-area: product7;
+    }
+
+    .product8 {
+        grid-area: product8;
+    }
+    .catalog-title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .catalog {
+        display: grid;
+        grid-template-columns: 0.1fr 2.9fr 0.1fr 2.9fr 0.1fr 2.9fr 0.1fr 2.9fr 0.1fr;
+        grid-template-rows: 0.1fr 2.3fr 0.15fr 2.3fr 0.1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . . . . . . . ."
+            ". product1 . product2 . product3 . product4 ."
+            ". . . . . . . . ."
+            ". product5 . product6 . product7 . product8 ."
+            ". . . . . . . . .";
+    }
+
+    .product1 {
+        grid-area: product1;
+    }
+
+    .product2 {
+        grid-area: product2;
+    }
+
+    .product3 {
+        grid-area: product3;
+    }
+
+    .product4 {
+        grid-area: product4;
+    }
+
+    .product5 {
+        grid-area: product5;
+    }
+
+    .product6 {
+        grid-area: product6;
+    }
+
+    .product7 {
+        grid-area: product7;
+    }
+
+    .product8 {
+        grid-area: product8;
+    }
+    .catalog-title{
+        font-size: 4.5rem;
+    }
+}
+
+/* INDEX BODY */
+
+@media screen and (max-width: 768px) {
+    
+    .title-index-wallpaper{
+        font-size: 0.75rem;
+    }
+    
+    .text-index-wallpaper{
+        font-size: 0.75rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+    .title-index-wallpaper{
+        font-size: 1.5rem;
+    }
+    
+    .text-index-wallpaper{
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .title-index-wallpaper{
+        font-size: 2.5rem;
+    }
+    
+    .text-index-wallpaper{
+        font-size: 2rem;
+    }
+    
+}
