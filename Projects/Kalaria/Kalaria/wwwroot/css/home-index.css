@@ -1,0 +1,143 @@
+
+
+
+
+/*--------ANIMATIONS-------------*/
+
+.animation-to-left {
+    --view-timeline-name: --left;
+    --view-timeline-axis: block;
+    --animation-timeline: --left;
+    animation: var(--animation-timeline) 0.001s ease-out;
+    display: var(--view-timeline-axis);
+    opacity: 0;
+}
+.animation-to-left {
+    --view-timeline-name: --left;
+    --view-timeline-axis: block;
+    --animation-timeline: --left;
+    animation: var(--animation-timeline) 0.001s ease-out;
+    display: var(--view-timeline-axis);
+    opacity: 0;
+}
+
+@keyframes ToLeft {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animation-to-right {
+    --view-timeline-name: --right;
+    --view-timeline-axis: block;
+    --animation-timeline: --right;
+    animation: var(--animation-timeline) 1s ease-out;
+    display: var(--view-timeline-axis);
+    opacity: 0;
+}
+
+@keyframes ToRight {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+    .animation-to-top {
+    animation: to-top 1s ease-out;
+}
+
+
+@keyframes to-top {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes more-info {
+    from {
+        color: black;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Futura Std', sans-serif;
+    }
+
+    to {
+        color: #001F3F;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Futura Std', sans-serif;
+        text-decoration-color: black;
+        text-decoration-thickness: 1.05rem;
+        font-size: 2.05rem;
+    }
+}
+/*--------/ANIMATIONS-------------*/
+
+
+
+
+
+
+
+.button_slide {
+    text-decoration: none;
+    color: black;
+    border: 2px solid #001F3F;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: 'Futura Std', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #001F3F;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.slide_left:hover {
+    box-shadow: inset 0 0 0 3rem #001F3F;
+    color: white;
+}
+
+.slide_down:hover {
+    box-shadow: inset 0 100px 0 0 #001F3F;
+    color: white;
+}
+
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #001F3F;
+    color: white;
+}
+
+.slide_diagonal:hover {
+    box-shadow: inset 400px 50px 0 0 #001F3F;
+    color: white;
+}
+
+#outer {
+    width: 364px;
+   
+}
+
+
+

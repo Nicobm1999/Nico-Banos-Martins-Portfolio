@@ -1,0 +1,88 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    caret-color: transparent;
+}
+
+body {
+    background-color: white;
+}
+/*.tu-eliges {
+    background-image: url(/images/triangle-mosaic.webp);
+}
+
+.instalaciones {
+    background-image: url(/images/interlaced.png);
+}*/
+
+
+html {
+  font-size: 14px;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+img {
+    filter: grayscale(0%);
+}
+
+img:hover {
+    filter: grayscale(100%);
+}
+
+/*------COLORES--------*/
+
+.sub-yellow {
+    border-bottom: 1rem solid #ffcc00;
+}
+
+.mini-sub-yellow {
+    border-bottom: 0.5rem solid #ffcc00;
+}
+
+.sub-blue {
+    border-bottom: 1.5rem solid #001F3F;
+}
+
+.tag-blue {
+    background-color:#001F3F;
+}
+
+.btn-blue:hover {
+    background-color: #001F3F;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.btn-black {
+    background-color: white;
+    color: #001F3F;
+    border: 1px solid #001F3F;
+    border-radius: 0;
+}
+
+.btn-black:hover {
+    background-color: #001F3F;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.btn-blue {
+    background-color: white;
+    color: #001F3F;
+    border: 1px solid #001F3F;
+    border-radius: 0;
+}

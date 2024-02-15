@@ -1,0 +1,115 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<link rel="stylesheet" href="~/css/activities.css" asp-append-version="true" />
+
+
+<form class="container w-50 my-5 p-5">
+    <div class="mb-4"><p class="title text-center">SOLICITUD INFORMACIÓN | CLASES DE REFUERZO EN GRUPO</p></div>
+    <div class="mb-3  mt-5">
+        <label for="nombreCompleto" class="form-label">Nombre completo (Solicitante)</label>
+        <input type="text" class="form-control" id="nombreCompleto" required>
+    </div>
+    <div class="mb-3  mt-3">
+        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    </div>
+    <div class="mb-3  mt-3">
+        <label for="telefono" class="form-label">Número de teléfono</label>
+        <input type="tel" class="form-control" id="telefono" required>
+    </div>
+    <div id="Help" class="form-text">*Los datos que se faciliten serán utilizados únicamente para contactar con usted..</div>
+
+    <div class="mb-3  mt-3">
+        <label class="form-label">Seleccione las materias que necesite reforzar</label>
+        <div class="container-fluid p-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="checkbox" id="lenguaGallega" name="asignatura" value="lengua-gallega">
+                    <label for="lenguaGallega">Lengua Gallega</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="checkbox" id="matematicas" name="asignatura" value="matematicas">
+                    <label for="matematicas">Matemáticas</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="checkbox" id="cienciasSociais" name="asignatura" value="ciencias-sociais">
+                    <label for="cienciasSociais">Ciencias Sociais</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="checkbox" id="cienciasNaturais" name="asignatura" value="ciencias-naturais">
+                    <label for="cienciasNaturais">Ciencias Naturais</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="checkbox" id="educacionFisica" name="asignatura" value="educacion-fisica">
+                    <label for="educacionFisica">Educación Física</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="checkbox" id="religion" name="asignatura" value="religion">
+                    <label for="religion">Relixión (Religión)</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="checkbox" id="linguaCastellana" name="asignatura" value="lingua-castellana">
+                    <label for="linguaCastellana">Lengua Castellana</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="checkbox" id="historia" name="asignatura" value="historia">
+                    <label for="historia">Historia</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="checkbox" id="geografia" name="asignatura" value="geografia">
+                    <label for="geografia">Xeografía (Geografía)</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="checkbox" id="plastica" name="asignatura" value="plastica">
+                    <label for="plastica">Educación Plástica, Visual e Audiovisual</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="checkbox" id="musica" name="asignatura" value="musica">
+                    <label for="musica">Música</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="checkbox" id="tecnoloxia" name="asignatura" value="tecnoloxia">
+                    <label for="tecnoloxia">Tecnoloxía</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="checkbox" id="educacionEticoCivica" name="asignatura" value="educacion-etico-civica">
+                    <label for="educacionEticoCivica">Educación Ético-Cívica</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="checkbox" id="linguaExtranxeira" name="asignatura" value="lingua-extranxeira">
+                    <label for="linguaExtranxeira">Lingua Estranxeira (Inglés)</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mb-3 mt-3">
+        <label for="mensaje" class="form-label">
+            ¿Tienes alguna pregunta sobre los servicios?
+        </label>
+        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+    </div>
+    <div class="mb-3 form-check mt-5">
+        <input type="checkbox" class="form-check-input" id="terminosCondiciones" required>
+        <label class="form-check-label" for="terminosCondiciones">Acepto los términos y condiciones</label>
+    </div>
+    <button type="submit" class="more-info w-100 border-0 text-end px-2" style="background-color:transparent">SOLICITAR INFORMACIÓN</button>
+</form>

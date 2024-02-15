@@ -1,0 +1,163 @@
+﻿@model IEnumerable<Kalaria.Models.Event>
+
+@{
+    ViewData["Title"] = "Animación Infantil";
+}
+@{
+    Layout = "_Layout";
+}
+<section class="container-fluid p-0 animation-to-left shadow bg-white">
+    <div class="row">
+        <div class="col-lg-7 position-relative">
+            <div class="image-container">
+                <img class="w-100 img-fluid" src="/images/camps/camps-header.jpg" />
+
+            </div>
+        </div>
+        <div class="col-lg-5 d-flex align-items-center">
+            <div class="container p-4">
+                <div class="w-100 mb-1 mb-xl-5 p-0 sub-blue">
+                    <p class="fs-1 fw-bold">ANIMACIÓN INFANTIL</p>
+                </div>
+                <p class="fs-5 text-black mt-5">
+                    En <strong>KALARIA</strong>, buscamos apasionados profesionales de la docencia, dispuestos a destacar sus habilidades.
+                    Ya seas un educador experimentado en el sector o un recién graduado, te invitamos a formar parte de nuestro equipo y contribuir al crecimiento y éxito de nuestro proyecto.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid text-center animation-to-right px-4 py-2  py-xl-5 shadow">
+    <div class="row ">
+        <div class="col-12 col-xl-4 p-1 d-flex align-items-center">
+            <div id="outer" class="container text-center mb-4 ">
+                <a class="button_slide slide_left" asp-area="" asp-controller="Requests" asp-action="RequestOnSiteAcademy">PERSONALIZA TU EVENTO</a>
+            </div>
+        </div>
+        <div class="col-12 col-xl-8 p-2 d-flex align-items-center">
+            <div class="container text-xl-start p-4">
+                <div class="w-100 mb-1 mb-xl-5 p-0 sub-yellow">
+                    <p class="fs-2 fw-bold">TUS EVENTOS</p>
+                </div>
+                <p class="fs-6 text-black">
+                    Ofrecemos una variedad de servicios para eventos, desde bodas hasta cumpleaños y comuniones etc. ¡Garantizando diversión total para los más pequeños del lugar!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid text-end animation-to-left px-xl-4 py-2  py-xl-5 shadow">
+    <div class="container">
+        <div class="w-100 mb-1 mb-xl-5 p-0 sub-blue">
+            <p class="fs-2 fw-bold text-center">CAMPAMENTOS</p>
+        </div>
+        <div class="row w-100 my-5">
+            <div class="col">
+                <div class="dropdown d-inline">
+                    <button class="btn btn-blue dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filtrar por tipo
+                    </button>
+                    <ul class="dropdown-menu rounded-0">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-inline ml-2">
+                    <button class="btn btn-blue  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filtrar por ubicación
+                    </button>
+                    <ul class="dropdown-menu rounded-0">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-6 col-xl-4">
+                    <div class="card mb-3">
+                        <div class="row position-relative ">
+                            <img src="@item.EventUrlImagen" class="img-fluid rounded-start " alt="...">
+                            <div class="position-absolute top-0 w-50  d-flex align-items-center justify-content-center shadow tag-blue">
+                                <p class="card-text">
+                                    <small class="text-white ">@item.EventType</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card-body ">
+                                <div class="w-100 mb-1 mb-xl-3 p-0 text-center mini-sub-yellow">
+                                    <p class="fs-4 fw-bold">@item.EventName</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="fs-6 p-3">@item.EventDescription</p>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                Ubicacion &rarr; @item.EventLocation
+                                            </div>
+                                            <div class="col border-start border-1 text-center">
+                                                Numero de plazas &rarr; @item.MaxAttendees
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-2">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <p class="fs-6 fw-bold text-center">
+                                                        PLAZO DE INSCRIPCIÓN
+                                                    </p>
+                                                    <hr />
+                                                    <div class="col">
+                                                        <p class="text-end">@item.RegistrationStartDate.ToString("dd/MM/yyyy")</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="text-start">@item.RegistrationEndDate.ToString("dd/MM/yyyy")</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col border-start border-1">
+                                                <div class="row">
+                                                    <p class="fs-6 fw-bold text-center">
+                                                        DURACIÓN
+                                                    </p>
+                                                    <hr />
+                                                    <div class="col-12 col-xl-6">
+                                                        <p class="text-end">@item.EventStartDate.ToString("dd/MM/yyyy")</p>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6">
+                                                        <p class="text-start">@item.EventEndDate.ToString("dd/MM/yyyy")</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item text-center ">
+                                        <a class="btn btn-outline-dark w-50 rounded-0 mt-3" asp-area="" asp-controller="Entertainment" asp-action="Details" asp-route-id="@item.EventID">+ INFORMACIÓN</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+

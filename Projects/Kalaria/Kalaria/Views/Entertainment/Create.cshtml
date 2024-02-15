@@ -1,0 +1,76 @@
+﻿@model Kalaria.Models.Event
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Event</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+          
+            <div class="form-group">
+                <label asp-for="EventName" class="control-label"></label>
+                <input asp-for="EventName" class="form-control" />
+                <span asp-validation-for="EventName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventDescription" class="control-label"></label>
+                <input asp-for="EventDescription" class="form-control" />
+                <span asp-validation-for="EventDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventUrlImagen" class="control-label"></label>
+                <input asp-for="EventUrlImagen" class="form-control" />
+                <span asp-validation-for="EventUrlImagen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventLocation" class="control-label"></label>
+                <input asp-for="EventLocation" class="form-control" />
+                <span asp-validation-for="EventLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventType" class="control-label"></label>
+                <input asp-for="EventType" class="form-control" />
+                <span asp-validation-for="EventType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaxAttendees" class="control-label"></label>
+                <input asp-for="MaxAttendees" class="form-control" />
+                <span asp-validation-for="MaxAttendees" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegistrationStartDate" class="control-label"></label>
+                <input asp-for="RegistrationStartDate" class="form-control" />
+                <span asp-validation-for="RegistrationStartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegistrationEndDate" class="control-label"></label>
+                <input asp-for="RegistrationEndDate" class="form-control" />
+                <span asp-validation-for="RegistrationEndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventStartDate" class="control-label"></label>
+                <input asp-for="EventStartDate" class="form-control" />
+                <span asp-validation-for="EventStartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEndDate" class="control-label"></label>
+                <input asp-for="EventEndDate" class="form-control" />
+                <span asp-validation-for="EventEndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
