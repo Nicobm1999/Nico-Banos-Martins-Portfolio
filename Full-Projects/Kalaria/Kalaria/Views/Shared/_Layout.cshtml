@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="~/css/header-footer.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/home-index.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Kalaria.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
    
 </head>
 <body>
-    <header class="bg-primary">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow pb-3">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light shadow pb-3">
             <div class="container-fluid ">
                 <div class="row w-100">
                     <div class="col-12 col-lg-3 d-flex justify-content-lg-start justify-content-center">
                         <a asp-controller="Home" asp-action="Index" class="text-center">
-                            <img src="/images/logos/KALARIA.png" class="w-75">
+                            <img src="/images/logos/footer-logo.png" class="w-75">
                         </a>
                     </div>
                     <div class="col-12 col-lg-9 d-flex justify-content-lg-end justify-content-center">
@@ -30,16 +33,16 @@
                             <ul class="navbar-nav col d-flex justify-content-around">
                               
                                 <li class="nav-item ">
-                                    <a asp-controller="TheAcademy" asp-action="Index" class="nav-link fs-6  text-dark">La Academia</a>
+                                    <a asp-controller="TheAcademy" asp-action="Index" class="nav-link fs-6  text-white">LA ACADEMIA</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a asp-controller="Entertainment" asp-action="Index" class="nav-link fs-6 text-dark">Animación Infantil</a>
+                                    <a asp-controller="Entertainment" asp-action="Index" class="nav-link fs-6 text-white">ANIMACIÓN INFANTIL</a>
                                 </li>
                                 <li class="nav-item text-center">
-                                    <a asp-controller="Home" asp-action="About" class="nav-link fs-6  text-dark">¿Quiénes somos?</a>
+                                    <a asp-controller="Home" asp-action="About" class="nav-link fs-6  text-white">¿QUIÉNES SOMOS?</a>
                                 </li>
                                 <li class="nav-item text-center">
-                                    <a asp-area="" asp-controller="Home" asp-action="Work" class="nav-link fs-6 text-dark">Trabaja con nosotros</a>
+                                    <a asp-area="" asp-controller="Home" asp-action="Work" class="nav-link fs-6 text-white">TRABAJA CON NOSOTROS</a>
                                 </li>
                                 <li class="nav-item text-center">
                                     <a class="btn btn-black" asp-area="" asp-controller="Home" asp-action="Work">AREA DE SOCIOS</a>
@@ -48,11 +51,8 @@
                         </div>
                     </div>
                 </div>
-               
             </div>
         </nav>
-
-
     </header>
    
 
@@ -62,95 +62,62 @@
         </main>
     </div>
 
-    <!-- Footer -->
-    <footer class="text-center text-lg-start pt-2  " >
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3">
-                
-                    <div class="col mx-auto mb-4 text-center">
-                        <div class="px-5">
-                            <a class="nav-link text-white mx-3" asp-area="" asp-controller="TheAcademy" asp-action="Index">La academia</a>
-                        </div>
-                        <div class="px-5">
-                            <a class="nav-link text-white mx-3" asp-area="" asp-controller="Entertainment" asp-action="Index">Animación Infantil</a>
-                        </div>
-                        <div class="px-5">
-                            <a class="nav-link text-white mx-3" asp-area="" asp-controller="Home" asp-action="About">¿Quiénes somos?</a>
-                        </div>
-                        <div class="px-5">
-                            <a class="nav-link text-white mx-3" asp-area="" asp-controller="Home" asp-action="Work">Trabaja con nosotros</a>
-                        </div>
-                     
-                        
-                    </div>
-                    <div class="col mx-auto mb-4 text-center">
-                        <div class="px-5">
-                            <a class="fas fa-home me-3 nav-link text-white mx-3" asp-area="" asp-controller="Home" asp-action="Index">Algun Lugar, CP 36320, ES</a>
-                        </div>
-                        <div class="px-5">
-                            <a class="nav-link text-white" href="https://www.freepik.com/free-photo/medium-shot-collage-kids_38171410.htm#query=school&position=2&from_view=search&track=sph">Imágenes de Freepik</a>
-                        </div>
-
-                        <div class="d-flex px-5 my-3">
-                            <a href="enlace_a_tu_facebook" class="text-white mx-2">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="enlace_a_tu_instagram" class="text-white mx-2">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="enlace_a_tu_twitter" class="text-white mx-2">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
+    <footer class="text-center text-lg-start  mt-5">
+        <div class="container text-center text-md-start ">
+            <div class="row d-flex justify-content-center">
+                <img src="/images/logos/footer-logo.png" class="w-25 mt-5" />
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto mb-4">
+                    <ul class="mt-5 text-center">
+                        <li class="mb-3">
+                            <a asp-controller="TheAcademy" asp-action="Index" class="footer-link text-white text-decoration-none">La Academia</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Entertainment" asp-action="Index" class="footer-link text-white text-decoration-none">Animación Infantil</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 mx-auto mb-4">
+                    <ul class="mt-5 text-center">
+                        <li class="mb-3" >
+                            <a asp-controller="Home" asp-action="About" class="footer-link text-white text-decoration-none">¿Quiénes somos?</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Work" class="footer-link text-white text-decoration-none">Trabaja con nosotros</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-
-        <div class="text-center p-4">
-            &copy; 2024 Kalaria | Todos los derechos reservados
         </div>
+
+        <!-- Section: Links  -->
+        <section class="d-flex justify-content-center p-4 border-bottom">
+            <div class="text-center">
+                <a href="" class="mx-2 text-reset">
+                    <i class="fab fa-facebook-f text-white"></i>
+                </a>
+                <a href="" class="mx-2 text-reset">
+                    <i class="fab fa-twitter text-white"></i>
+                </a>
+                <a href="" class="mx-2 text-reset">
+                    <i class="fab fa-instagram text-white"></i>
+                </a>
+            </div>
+        </section>
+        <div class="text-center p-4 text-white">
+            © 2024 Copyright |
+            <a class="text-reset fw-bold " href="https://mdbootstrap.com/">Kalaria.com</a>
+        </div>
+
+
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/main.js" asp-append-version="true"></script>
-    <script>
-        const animationToLeft = document.querySelectorAll('.animation-to-left');
-        const animationToRight = document.querySelectorAll('.animation-to-right');
-
-        const observerOptions = {
-            root: null,
-            threshold: 0.2,
-        };
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = 'ToLeft 1s ease-out';
-                    entry.target.style.opacity = '1';
-                }
-            });
-        }, observerOptions);
-
-        animationToLeft.forEach(element => {
-            observer.observe(element);
-        });
-
-        const observer2 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = 'ToRight 1s ease-out';
-                    entry.target.style.opacity = '1';
-                }
-            });
-        }, observerOptions);
-
-        animationToRight.forEach(element => {
-            observer2.observe(element);
-        });</script>
+    <script src="https://kit.fontawesome.com/c049642920.js" crossorigin="anonymous"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

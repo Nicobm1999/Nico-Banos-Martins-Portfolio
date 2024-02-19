@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kalaria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebf233f3883b7fa357cd5bec69dbb532eecfb772")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67674ca1a3384b94e1b27e4a8f98dec440217329")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kalaria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kalaria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

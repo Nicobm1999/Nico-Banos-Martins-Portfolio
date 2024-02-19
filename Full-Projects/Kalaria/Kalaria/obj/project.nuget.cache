@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ofbd6uS1f6Ho5GH7CZn4QNggpiaS4wBAF53n927z+VtR37EBz3JqIulLg+9JGq/ElqC/52RwiKg2ZDxXe+qMMQ==",
+  "dgSpecHash": "unB7cN+8N+IFyoDFE6mS0CqC5bF9HJKErJkQD/hFz2+NrzHD9Zjv6Din74BuxlXhP2l94NjWnruC3jwcF1eJRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\Kalaria.csproj",
+  "projectFilePath": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Full-Projects\\Kalaria\\Kalaria\\Kalaria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicol\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
     "C:\\Users\\nicol\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
