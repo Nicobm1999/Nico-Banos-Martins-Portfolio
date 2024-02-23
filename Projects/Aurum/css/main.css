@@ -1,0 +1,23 @@
+*{
+    caret-color: transparent;
+}
+
+
+body {
+    background: linear-gradient(to right, #000000, #0c0c0c, #090909);
+    color: white;
+}
+
+.nav-item .nav-link{
+    font-size: 1.5rem;;
+}
+
+
+.title{
+    color: white;
+    font-size: 8rem;
+}
+
+.navbar{
+    display: none;
+}
