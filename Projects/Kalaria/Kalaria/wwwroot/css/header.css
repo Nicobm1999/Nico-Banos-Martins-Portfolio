@@ -3,18 +3,21 @@ header .nav-link {
     font-weight: 400;
     color: black;
     position: relative;
-    color: black;
+  
 }
 
 header .nav-link::before {
-    content: '';
+    content: "";
+    display: block;
     position: absolute;
-    bottom: -0.1px;
-    left: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
-    height: 0.3rem;
-    background-color: white;
-    transition: width 0.01s ease;
+    height: 0.2rem;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+    border-width: 0;
 }
 
 header .nav-link:hover::before {
@@ -22,15 +25,5 @@ header .nav-link:hover::before {
     transition: width 0.3s ease; 
 }
 
-header .btn {
-    border: 1px solid white;
-    border-radius: 0;
-}
-
-header .btn:hover {
-    border: 1px solid black;
-    border-radius: 0;
-  
-}
 
 

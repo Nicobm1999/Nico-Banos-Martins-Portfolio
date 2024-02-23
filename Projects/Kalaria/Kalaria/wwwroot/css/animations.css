@@ -6,15 +6,6 @@
     display: var(--view-timeline-axis);
     opacity: 0;
 }
-.animation-to-left {
-    --view-timeline-name: --left;
-    --view-timeline-axis: block;
-    --animation-timeline: --left;
-    animation: var(--animation-timeline) 0.001s ease-out;
-    display: var(--view-timeline-axis);
-    opacity: 0;
-}
-
 @keyframes ToLeft {
     from {
         transform: translateX(100%);
@@ -25,7 +16,6 @@
         opacity: 1;
     }
 }
-
 .animation-to-right {
     --view-timeline-name: --right;
     --view-timeline-axis: block;
@@ -45,25 +35,5 @@
         opacity: 1;
     }
 }
-
-@keyframes more-info {
-    from {
-        color: black;
-        font-size: 2rem;
-        font-weight: 600;
-        font-family: 'Futura Std', sans-serif;
-    }
-
-    to {
-        color: #001F3F;
-        font-size: 2rem;
-        font-weight: 600;
-        font-family: 'Futura Std', sans-serif;
-        text-decoration-color: black;
-        text-decoration-thickness: 1.05rem;
-        font-size: 2.05rem;
-    }
-}
-
 
 
