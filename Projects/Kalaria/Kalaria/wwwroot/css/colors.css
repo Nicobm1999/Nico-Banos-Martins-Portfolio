@@ -1,46 +1,4 @@
-
-
-* {
-    margin: 0;
-    padding: 0;
-    caret-color: transparent;
-}
-
-header, footer {
-    font-family: "Lato", sans;
-    background-color: #001F3F;
-}
-
-body {
-    background-color: white;
-}
-
-html {
-  font-size: 14px;
-  height: 100%;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-img {
-    filter: grayscale(0%);
-}
-
-img:hover {
-    filter: grayscale(100%);
-}
-
-/*------COLORES--------*/
-
+﻿
 .sub-yellow {
     border-bottom: 1rem solid #ffcc00;
 }
@@ -55,7 +13,7 @@ img:hover {
 
 
 .tag-blue {
-    background-color:#001F3F;
+    background-color: #001F3F;
 }
 
 .btn-blue:hover {

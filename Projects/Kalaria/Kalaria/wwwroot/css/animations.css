@@ -1,9 +1,3 @@
-
-
-
-
-/*--------ANIMATIONS-------------*/
-
 .animation-to-left {
     --view-timeline-name: --left;
     --view-timeline-axis: block;
@@ -69,55 +63,6 @@
         text-decoration-thickness: 1.05rem;
         font-size: 2.05rem;
     }
-}
-/*--------/ANIMATIONS-------------*/
-
-
-
-
-
-
-
-.button_slide {
-    text-decoration: none;
-    color: black;
-    border: 2px solid #001F3F;
-    border-radius: 0px;
-    padding: 18px 36px;
-    display: inline-block;
-    font-family: 'Futura Std', sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 #001F3F;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
-}
-
-.slide_left:hover {
-    box-shadow: inset 0 0 0 3rem #001F3F;
-    color: white;
-}
-
-.slide_down:hover {
-    box-shadow: inset 0 100px 0 0 #001F3F;
-    color: white;
-}
-
-.slide_right:hover {
-    box-shadow: inset 400px 0 0 0 #001F3F;
-    color: white;
-}
-
-.slide_diagonal:hover {
-    box-shadow: inset 400px 50px 0 0 #001F3F;
-    color: white;
-}
-
-#outer {
-    width: 364px;
-   
 }
 
 

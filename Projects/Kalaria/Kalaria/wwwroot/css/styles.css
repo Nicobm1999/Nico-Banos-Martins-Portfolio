@@ -1,0 +1,26 @@
+@import url('/css/animations.css');
+@import url('/css/header.css');
+@import url('/css/imgs.css');
+@import url('/css/colors.css');
+@import url('/css/transitions.css');
+@import url('/css/footer.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    caret-color: transparent;
+}
+
+header, footer {
+    font-family: "Lato", sans;
+    background-color: #001F3F;
+}
+
+body {
+    background-color: white;
+}
+
+
+
+
