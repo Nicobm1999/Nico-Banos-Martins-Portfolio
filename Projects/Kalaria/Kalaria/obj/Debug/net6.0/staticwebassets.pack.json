@@ -5,16 +5,32 @@
       "PackagePath": "staticwebassets\\Kalaria.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\css\\header-footer.css",
-      "PackagePath": "staticwebassets\\css\\header-footer.css"
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\css\\animations.css",
+      "PackagePath": "staticwebassets\\css\\animations.css"
     },
     {
-      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\css\\home-index.css",
-      "PackagePath": "staticwebassets\\css\\home-index.css"
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\css\\colors.css",
+      "PackagePath": "staticwebassets\\css\\colors.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\css\\header.css",
+      "PackagePath": "staticwebassets\\css\\header.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\css\\imgs.css",
+      "PackagePath": "staticwebassets\\css\\imgs.css"
     },
     {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\css\\transitions.css",
+      "PackagePath": "staticwebassets\\css\\transitions.css"
     },
     {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\favicon.ico",
@@ -107,6 +123,10 @@
     {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\js\\requestOSA.js",
+      "PackagePath": "staticwebassets\\js\\requestOSA.js"
     },
     {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Kalaria\\Kalaria\\wwwroot\\lib\\bootstrap\\LICENSE",
