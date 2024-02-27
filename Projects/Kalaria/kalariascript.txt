@@ -1,0 +1,137 @@
+-- Crear la base de datos kalaria
+CREATE DATABASE kalaria;
+GO
+
+-- Utilizar la base de datos kalaria
+USE kalaria;
+GO
+
+-- Eliminar tablas si existen
+IF OBJECT_ID('RequestHomeAcademy', 'U') IS NOT NULL
+    DROP TABLE RequestHomeAcademy;
+IF OBJECT_ID('RequestOnSiteAcademy', 'U') IS NOT NULL
+    DROP TABLE RequestOnSiteAcademy;
+IF OBJECT_ID('RequestOutsideEvent', 'U') IS NOT NULL
+    DROP TABLE RequestOutsideEvent;
+IF OBJECT_ID('RequestOwnEvent', 'U') IS NOT NULL
+    DROP TABLE RequestOwnEvent;
+IF OBJECT_ID('RequestJobEntertainer', 'U') IS NOT NULL
+    DROP TABLE RequestJobEntertainer;
+IF OBJECT_ID('RequestJobTeacher', 'U') IS NOT NULL
+    DROP TABLE RequestJobTeacher;
+IF OBJECT_ID('Events', 'U') IS NOT NULL
+    DROP TABLE Events;
+IF OBJECT_ID('EventSchedule', 'U') IS NOT NULL
+    DROP TABLE EventSchedule;
+IF OBJECT_ID('Employees', 'U') IS NOT NULL
+    DROP TABLE Employees;
+IF OBJECT_ID('FacilityImages', 'U') IS NOT NULL
+    DROP TABLE FacilityImages;
+
+-- Crear tablas
+CREATE TABLE RequestHomeAcademy (
+    RequestID INT IDENTITY(1,1) PRIMARY KEY,
+    CustomerName NVARCHAR(100),
+    CustomerEmail NVARCHAR(100),
+    PhoneNumber NVARCHAR(20),
+    Address NVARCHAR(255),
+    RequestDate DATETIME,
+    Comments NVARCHAR(MAX)
+);
+
+CREATE TABLE RequestOnSiteAcademy (
+    RequestID INT IDENTITY(1,1) PRIMARY KEY,
+    CustomerName NVARCHAR(100),
+    CustomerEmail NVARCHAR(100),
+    PhoneNumber NVARCHAR(20),
+    SchoolName NVARCHAR(100),
+    SchoolAddress NVARCHAR(255),
+    RequestDate DATETIME,
+    Comments NVARCHAR(MAX)
+);
+
+CREATE TABLE RequestOutsideEvent (
+    RequestID INT IDENTITY(1,1) PRIMARY KEY,
+    CustomerName NVARCHAR(100),
+    CustomerEmail NVARCHAR(100),
+    PhoneNumber NVARCHAR(20),
+    EventType NVARCHAR(100),
+    EventDate DATETIME,
+    EventLocation NVARCHAR(255),
+    RequestDate DATETIME,
+    Comments NVARCHAR(MAX)
+);
+
+CREATE TABLE RequestOwnEvent (
+    RequestID INT IDENTITY(1,1) PRIMARY KEY,
+    EventName NVARCHAR(100),
+    EventType NVARCHAR(100),
+    EventDate DATETIME,
+    MaxAttendees INT,
+    CurrentAttendees INT,
+    RequestDate DATETIME,
+    Comments NVARCHAR(MAX)
+);
+
+CREATE TABLE RequestJobEntertainer (
+    RequestID INT IDENTITY(1,1) PRIMARY KEY,
+    ApplicantName NVARCHAR(100),
+    ApplicantEmail NVARCHAR(100),
+    PhoneNumber NVARCHAR(20),
+    Experience NVARCHAR(MAX),
+    AvailableFrom DATETIME,
+    AvailableTo DATETIME,
+    RequestDate DATETIME,
+    Comments NVARCHAR(MAX)
+);
+
+CREATE TABLE RequestJobTeacher (
+    RequestID INT IDENTITY(1,1) PRIMARY KEY,
+    ApplicantName NVARCHAR(100),
+    ApplicantEmail NVARCHAR(100),
+    PhoneNumber NVARCHAR(20),
+    Subject NVARCHAR(100),
+    Experience NVARCHAR(MAX),
+    AvailableFrom DATETIME,
+    AvailableTo DATETIME,
+    RequestDate DATETIME,
+    Comments NVARCHAR(MAX)
+);
+
+CREATE TABLE Events (
+    EventID INT IDENTITY(1,1) PRIMARY KEY,
+    EventName NVARCHAR(100),
+    EventDescription NVARCHAR(MAX),
+    EventUrlImagen NVARCHAR(255),
+    EventLocation NVARCHAR(255),
+    EventType NVARCHAR(100),
+    MaxAttendees INT,
+    RegistrationStartDate DATETIME,
+    RegistrationEndDate DATETIME,
+    EventStartDate DATETIME,
+    EventEndDate DATETIME
+);
+
+CREATE TABLE EventSchedule (
+    ScheduleID INT IDENTITY(1,1) PRIMARY KEY,
+    EventID INT,
+    DayOfWeek NVARCHAR(20),
+    StartTime TIME,
+    EndTime TIME,
+    FOREIGN KEY (EventID) REFERENCES Events(EventID)
+);
+
+CREATE TABLE Employees (
+    EmployeeID INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100),
+    Specialty NVARCHAR(100),
+    Position NVARCHAR(100),
+    Description NVARCHAR(MAX),
+    UrlImage NVARCHAR(255)
+);
+
+CREATE TABLE FacilityImages (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    AltText NVARCHAR(255),
+    ImageUrl NVARCHAR(255)
+);
