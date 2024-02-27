@@ -1,35 +1,45 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@{
+    ViewData["Title"] = "+INFO";
+}
 @{
+    Layout = "_Layout";
 }
 
-
-
 <form class="container w-50 my-5 p-5">
-    <div class="mb-4"><p class="title text-center">SOLICITUD INFORMACIÓN | CLASES DE REFUERZO PARTICULARES</p></div>
+    <div class="mb-4"><p class="fs-4 text-center fw-bold text-decoration-underline">SOLICITUD INFORMACIÓN - CLASES DE REFUERZO EN GRUPO</p></div>
     <div class="mb-3  mt-5">
-        <label for="nombreCompleto" class="form-label">Nombre completo (Solicitante)</label>
+        <label for="nombreCompleto" class="form-label fw-bold">NOMBRE COMPLETO (Persona solicitante)</label>
         <input type="text" class="form-control" id="nombreCompleto" required>
     </div>
     <div class="mb-3  mt-3">
-        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+        <label for="exampleInputEmail1" class="form-label fw-bold">CORREO ELECTRONICO</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
     </div>
     <div class="mb-3  mt-3">
-        <label for="telefono" class="form-label">Número de teléfono</label>
+        <label for="telefono" class="form-label fw-bold">NÚMERO DE TELÉFONO</label>
         <input type="tel" class="form-control" id="telefono" required>
     </div>
     <div class="mb-3  mt-3">
-        <label for="direccion" class="form-label">Dirección</label>
-        <input type="tel" class="form-control" id="direccion" required>
+        <label class="form-label fw-bold">CURSO ESCOLAR</label>
+        <p id="course-string"></p>
+
+        <select class="w-10 text-center">
+            <option value="º">Selecciona un curso</option>
+            <option value="1º">1º</option>
+            <option value="2º">2º</option>
+            <option value="3º">3º</option>
+            <option value="4º">4º</option>
+            <option value="5º">5º</option>
+            <option value="6º">6º</option>
+        </select>
+
     </div>
-    <div id="Help" class="form-text">*Los datos que se faciliten serán utilizados únicamente para contactar con usted..</div>
 
     <div class="mb-3  mt-3">
+        <label class="form-label fw-bold">SELECCIONE LAS MATERIAS QUE LE INTERESEN</label>
         <p id="subject-string"></p>
-        <label class="form-label">Seleccione las materias que necesite reforzar</label>
-        <div class="container-fluid p-3">
+
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
                     <input type="checkbox" id="lenguaGallega" name="asignatura" value="lengua-gallega" class="check-subject">
@@ -101,18 +111,16 @@
                 </div>
             </div>
         </div>
-
     </div>
-
-
-
     <div class="mb-3 mt-3">
-        <label for="mensaje" class="form-label">
-            ¿Tienes alguna pregunta sobre los servicios?
+        <label for="mensaje" class="form-label fw-bold">
+            ESCRIBANOS CUALQUIER DUDA QUE LE SURJA:
         </label>
         <textarea class="form-control" id="mensaje" rows="3"></textarea>
-    </div>
+    </div>    <div id="Help" class="form-text">*Los datos que se faciliten serán utilizados únicamente para contactar con usted.</div>
+
     <div class="d-flex justify-content-center align-items-center my-3">
+
         <a class="button_slide slide_left" id="more-info">SOLICITAR INFORMACIÓN</a>
     </div>
 
