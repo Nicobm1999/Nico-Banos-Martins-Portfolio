@@ -9,87 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Kalaria
 build_property.RootNamespace = Kalaria
-build_property.ProjectDir = C:\Users\nicol\OneDrive\Documentos\GitHub\Nico-Banos-Martins-Portfolio\Projects\Kalaria\Kalaria\
+build_property.ProjectDir = C:\Users\nicol\OneDrive\Documentos\GitHub\Nico-Banos-Martins-Portfolio\Projects\.NET (Dapper)\Kalaria\Kalaria\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\nicol\OneDrive\Documentos\GitHub\Nico-Banos-Martins-Portfolio\Projects\Kalaria\Kalaria
+build_property.MSBuildProjectDirectory = C:\Users\nicol\OneDrive\Documentos\GitHub\Nico-Banos-Martins-Portfolio\Projects\.NET (Dapper)\Kalaria\Kalaria
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Entertainment/Create.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Entertainment/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50ZXJ0YWlubWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Entertainment/Delete.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Entertainment/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50ZXJ0YWlubWVudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Entertainment/Details.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Entertainment/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50ZXJ0YWlubWVudFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Entertainment/Edit.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Entertainment/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50ZXJ0YWlubWVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Entertainment/Index.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Entertainment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50ZXJ0YWlubWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Home/About.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Home/Index.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Home/Privacy.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Home/Work.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Home/Work.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXb3JrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Requests/RequestHomeAcademy.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Requests/RequestHomeAcademy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdHNcUmVxdWVzdEhvbWVBY2FkZW15LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Requests/RequestJobEntertainer.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Requests/RequestJobEntertainer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdHNcUmVxdWVzdEpvYkVudGVydGFpbmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Requests/RequestJobTeacher.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Requests/RequestJobTeacher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdHNcUmVxdWVzdEpvYlRlYWNoZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Requests/RequestOnSiteAcademy.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Requests/RequestOnSiteAcademy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdHNcUmVxdWVzdE9uU2l0ZUFjYWRlbXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Shared/Error.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/TheAcademy/Index.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/TheAcademy/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlQWNhZGVteVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/_ViewImports.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/_ViewStart.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/Kalaria/Kalaria/Views/Shared/_Layout.cshtml]
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Kalaria/Kalaria/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nw4a7tbv4w

@@ -6,41 +6,20 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="/js/main.js"></script>
 </head>
 
-<body>
-    <form>
-        <input type="number" id="inversion" placeholder="Inversion">
-        <input type="number" id="rentabilidad" placeholder="Rentabilidad">
-        <input type="number" id="duracion" placeholder="Duración">
+<body class="bg-dark">
+    <form class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <input type="text" id="inversion" placeholder="Inversion">
+        <input type="text" id="rentabilidad" placeholder="Rentabilidad">
+        <input type="text" id="duracion" placeholder="Duración">
         <input type="submit" id="submit">
     </form>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let inversionInput = document.getElementById('inversion');
-            let rentabilidadInput = document.getElementById('rentabilidad');
-            let duracionInput = document.getElementById('duracion');
-            let submit = document.getElementById('submit');
-
-            submit.addEventListener("click", function () {
-
-                let inversion = parseFloat(inversionInput.value);
-                let rentabilidad = parseFloat(rentabilidadInput.value);
-                let duracion = parseInt(duracionInput.value);
-                let acumuladoTotal = 0;
-
-                for (let i = 1; i <= duracion; i++) {
-                    let beneficioAnual = inversion * (rentabilidad/100);
-                    inversion += beneficioAnual;
-                  
-                }
-                alert((inversion*rentabilidad/100)/12)
-                alert(inversion);
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
 
 </html>
