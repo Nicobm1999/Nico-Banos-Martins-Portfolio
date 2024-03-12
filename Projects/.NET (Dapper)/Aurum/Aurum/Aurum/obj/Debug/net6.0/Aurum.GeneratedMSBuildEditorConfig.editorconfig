@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\nicol\OneDrive\Documentos\GitHub\Nico-Banos-Martins-Portfolio\Projects\.NET (Dapper)\Aurum\Aurum\Aurum
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Aurum/Aurum/Aurum/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Aurum/Aurum/Aurum/Views/Chest/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Aurum/Aurum/Aurum/Views/Home/GoldPrice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHb2xkUHJpY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Aurum/Aurum/Aurum/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Aurum/Aurum/Aurum/Views/Home/SilverPrice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWx2ZXJQcmljZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/Aurum/Aurum/Aurum/Views/Shared/Error.cshtml]

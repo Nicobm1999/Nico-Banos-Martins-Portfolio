@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NkxQG83He+VlJ5SKEpg7iXpku+5X8uaCISh4ObYMNG4=",
+  "Hash": "m1ED6woAwF2V7XVNk1pFnza8lQUSMWZPUyBftKHi9uY=",
   "Source": "Aurum",
   "BasePath": "_content/Aurum",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Aurum\\Aurum\\Aurum\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Aurum\\Aurum\\Aurum\\wwwroot\\imgs\\logo.png",
       "SourceId": "Aurum",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Aurum\\Aurum\\Aurum\\wwwroot\\",
       "BasePath": "_content/Aurum",
-      "RelativePath": "favicon.ico",
+      "RelativePath": "imgs/logo.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,26 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Aurum\\Aurum\\Aurum\\wwwroot\\js\\grafica.js",
-      "SourceId": "Aurum",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Aurum\\Aurum\\Aurum\\wwwroot\\",
-      "BasePath": "_content/Aurum",
-      "RelativePath": "js/grafica.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\grafica.js"
+      "OriginalItemSpec": "wwwroot\\imgs\\logo.png"
     },
     {
       "Identity": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Aurum\\Aurum\\Aurum\\wwwroot\\js\\site.js",

@@ -23,6 +23,22 @@ namespace Aurum.Controllers
             return View();
         }
 
+        public IActionResult GoldPrice()
+        {
+            return View();
+        }
+
+        public IActionResult SilverPrice()
+        {
+            return View();
+        }
+
+
+        public IActionResult MyChest()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
