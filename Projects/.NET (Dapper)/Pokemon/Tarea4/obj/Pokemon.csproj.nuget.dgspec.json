@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Pokemon\\Tarea4\\Pokemon.csproj": {}
+    "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Pokemon\\Tarea4\\Pokemon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Pokemon\\Tarea4\\Pokemon.csproj": {
+    "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Pokemon\\Tarea4\\Pokemon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Pokemon\\Tarea4\\Pokemon.csproj",
+        "projectUniqueName": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Pokemon\\Tarea4\\Pokemon.csproj",
         "projectName": "Pokemon",
-        "projectPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Pokemon\\Tarea4\\Pokemon.csproj",
+        "projectPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Pokemon\\Tarea4\\Pokemon.csproj",
         "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\Pokemon\\Tarea4\\obj\\",
+        "outputPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Pokemon\\Tarea4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
