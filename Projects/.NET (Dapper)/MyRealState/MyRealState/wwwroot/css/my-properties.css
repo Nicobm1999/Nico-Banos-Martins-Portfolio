@@ -1,0 +1,11 @@
+﻿body {
+    background-color: #2B2B2B;
+}
+
+.map{
+    padding-top: 0;
+    border-end-start-radius: 1rem;
+    border-end-end-radius: 1rem;
+}
+
+/*Totalmente provisional*/

@@ -1,0 +1,199 @@
+﻿@model IEnumerable<Property>
+
+@{
+    ViewData["Title"] = "MyProperties";
+}
+
+
+
+<link rel="stylesheet" href="~/css/my-properties.css" asp-append-version="true" />
+
+
+<div class="container-fluid small p-5 py-0 ">
+    <div class="row h-50 text-white rounded-5">
+        <div class="col">
+            <div class="container-fluid w-100 map " style="height: 66vh" id="map"></div>
+        </div>
+    </div>
+    <div class="row px-5 pt-5">
+        <div class="col-6">
+            <p class="fs-2">
+                Lista de propiedades
+                <span class="material-symbols-outlined main-color">
+                    receipt_long
+                </span>
+            </p>
+        </div> 
+        
+    </div>
+  
+    <div class="row p-5 pt-2">
+        <div class="row">
+            <div class="col p-3">
+                <form action="MyProperties" method="GET" class="row border-1 rounded-pill border-danger">
+                    <div class="col-1 d-flex align-items-center">
+                        <select class="form-control  bg-dark text-white border-0" id="tipo" name="tipo">
+                            <option value="">Tipo</option>
+                            <option value="Hou">Casa</option>
+                            <option value="Apt">Apartamento</option>
+                            <option value="Loc">Local Comercial</option>
+                            <option value="Gar">Garaje</option>
+                            <option value="Lan">Terreno</option>
+                        </select>
+                    </div>
+                    <div class="col-1 d-flex align-items-center">
+                        <select id="country" name="country" class="form-control bg-dark text-white border-0 ">
+                            <option value="">País</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Bélgica">Bélgica</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Croacia">Croacia</option>
+                            <option value="Chipre">Chipre</option>
+                            <option value="República Checa">República Checa</option>
+                            <option value="Dinamarca">Dinamarca</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Finlandia">Finlandia</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Alemania">Alemania</option>
+                            <option value="Grecia">Grecia</option>
+                            <option value="Hungría">Hungría</option>
+                            <option value="Irlanda">Irlanda</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Letonia">Letonia</option>
+                            <option value="Lituania">Lituania</option>
+                            <option value="Luxemburgo">Luxemburgo</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Países Bajos">Países Bajos</option>
+                            <option value="Polonia">Polonia</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Rumania">Rumania</option>
+                            <option value="Eslovaquia">Eslovaquia</option>
+                            <option value="Eslovenia">Eslovenia</option>
+                            <option value="España">España</option>
+                        </select>
+                    </div>
+                    <div class="col-1 d-flex align-items-center">
+                        <select class="form-control bg-dark text-white border-0" id="city" name="city">
+                            <option value="">Ciudad</option>
+                            @{
+                                List<string> cities = new List<string>(); // Utiliza List en lugar de un arreglo para almacenar las ciudades
+                            }
+                            @foreach (var model in Model)
+                            {
+                                if (!cities.Contains(model.City)) // Verifica si la ciudad ya ha sido agregada a la lista
+                                {
+                                    cities.Add(model.City); // Agrega la ciudad a la lista
+                                    <option value="model.City">model.City</option> <!-- Agrega la opción al dropdown -->
+                                }
+                            }
+                        </select>
+
+                    </div>
+                    <div class="col-1 d-flex align-items-center">
+                        <select class="form-control bg-dark text-white border-0" id="status" name="status">
+                            <option value="">Estado</option>
+                            <option value="rented">Alquilado</option>
+                            <option value="for-sale">En venta</option>
+                            <option value="inactive">Inactivo</option>
+                        </select>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button type="submit" class="btn btn-green-bordered d-flex align-items-center">
+                            <span class="material-symbols-outlined">
+                                tune
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-12 p-3">
+            <div class="row border-bottom mb-3">
+                <div class="col">
+                    Tipo
+                </div>
+                <div class="col">
+                    País
+                </div>
+                <div class="col">
+                    Ciudad
+                </div>
+                <div class="col-2">
+                    Dirección
+                </div>           
+                <div class="col">
+                    Estado
+                </div>
+                <div class="col">
+                    Editar
+                </div>
+                <div class="col">
+                    Eliminar
+                </div>
+                <div class="col">
+                    Detalles
+                </div>
+                <div class="col">
+                    Cambiar Estado
+                </div>                
+            </div>
+            @foreach (var item in Model)
+            {
+                <div class="row property border-bottom mb-3">
+                        <div class="col id" hidden>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </div>
+                        <div class="col type">
+                            @Html.DisplayFor(modelItem => item.Type)
+                        </div>
+                        <div class="col country">
+                            @Html.DisplayFor(modelItem => item.Country)
+                        </div>
+                        <div class="col city">
+                            @Html.DisplayFor(modelItem => item.City)
+                        </div>
+                        <div class="col-2 adress">
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </div>                       
+                        <div class="col status">
+                        @Html.DisplayFor(modelItem => item.Status)
+                        </div>
+                        <div hidden class="col coordinates">
+                            @Html.DisplayFor(modelItem => item.Coordenates)
+                        </div>
+                        <div class="col">
+                        <a href="/Property/Update/@item.Id" class="btn btn-white rounded-0 border-0 w-100 "><span class="material-symbols-outlined">edit</span></a>
+                        </div>
+                        <div class="col">
+                            <form id="deleteForm_@item.Id" method="post" action="/Property/Delete/@item.Id">
+                                <input type="hidden" name="id" value="@item.Id">
+                                <button type="submit" class="btn btn-delete rounded-0 border-0 w-100 " onclick="return confirm('¿Estás seguro de que deseas eliminar esta propiedad?')"><span class="material-symbols-outlined">delete_forever</span></button>
+                            </form>
+                        </div>
+                        <div class="col">
+                            <a href="/Property/Details/@item.Id" class="btn btn-white rounded-0 border-0 w-100 "><span class="material-symbols-outlined">info</span></a>
+                        </div>
+                        <div class="col">
+                            <a href="/Property/ChangeStatus/@item.Id" class="btn btn-white rounded-0 border-0 w-100 "><span class="material-symbols-outlined">currency_exchange</span></a>
+                        </div>
+                    </div>
+             }           
+            <div class="row mt-3 px-5">
+                <div class="offset-10 col-2 ">
+                    <a href="@Url.Action("Create", "Properties")" class="btn btn-white w-100">
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>Nueva Propiedad
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/my-properties-map.js"></script>
+
+<script type="text/javascript" src="~/js/my-properties.js"></script> 
+
+
+

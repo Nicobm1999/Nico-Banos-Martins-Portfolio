@@ -1,0 +1,324 @@
+/* Estilos para la ubicación de la propiedad */
+
+.property-location-price {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 2.5%;
+}
+
+    .property-location-price table {
+        width: 95%;
+        border-collapse: collapse;
+        margin-left: 2.5%;
+        border-color: white;
+    }
+
+.property-main-title {
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: 500;
+}
+
+.property-main-price {
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.property-main-location {
+    font-size: 1em;
+    text-align: left;
+    font-weight: 300;
+}
+
+.property-main-ref {
+    text-align: right;
+}
+
+/* Reducción del espacio entre el contenido del primer y segundo tr */
+tr:nth-child(2) td {
+    padding-top: 5px;
+    /* Ajusta la cantidad de espacio superior */
+    padding-bottom: 5px;
+    /* Ajusta la cantidad de espacio inferior */
+}
+
+
+/* Estilos para la propiedad */
+.property {
+    text-align: left;
+    color: #000010;
+    margin-left: 15.39%;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 -5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Estilos para el contenedor de contacto */
+/* Establece el fondo transparente para el contenido */
+.property-main-tools {
+}
+
+    .property-main-tools a {
+        text-decoration: none;
+        color: #000010;
+        padding: 15px;
+    }
+
+.property-forms {
+    background-color: whte;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    left: 100%;
+    height: 1000px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    /* Conserva el fondo negro en la sombra */
+    color: #252727;
+}
+
+
+/* Estilos para los campos de entrada y selección en el formulario de contacto */
+.contact-form-input-container input,
+.contact-form-input-container select {
+    width: 90%;
+    margin-top: 25px;
+    height: 25px;
+}
+
+/* Estilos para las condiciones de contacto */
+.contact-conditions {
+    font-size: 0.60em;
+    margin-top: 25px;
+}
+
+    /* Estilos para las casillas de verificación en las condiciones de contacto */
+    .contact-conditions input[type="checkbox"] {
+        /* Cambia el tamaño del checkbox */
+        width: 30px;
+        height: 30px;
+    }
+
+/* Estilos para el botón de envío en el formulario de contacto */
+.contact-submit input[type="submit"] {
+    background-color: white;
+    border: none;
+    color: #252727;
+    width: 80%;
+    height: 30px;
+    margin-top: 25px;
+}
+
+/* Estilos para el contenido principal de la propiedad */
+.property-main-content {
+    width: 100%;
+    position: relative;
+}
+
+/* Estilos para las características relevantes de la propiedad */
+
+.property-relevant-features-title {
+    margin-bottom: 5%;
+    border-bottom: 1px solid #252727;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.property-relevant-features {
+    text-align: left;
+}
+
+/* Estilos para la tabla de características relevantes de la propiedad */
+.property-relevant-features-table {
+    width: 85%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-bottom: 10%;
+    border-spacing: 0 10px;
+    font-size: 0.8em;
+}
+
+    .property-relevant-features-table th,
+    .property-relevant-features-table td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .property-relevant-features-table th {
+        background-color: #252727;
+        color: white;
+        border: none;
+    }
+
+    .property-relevant-features-table td {
+        background-color: white;
+        color: #252727;
+        border: none;
+        border-radius: 0 5px 5px 0;
+    }
+
+
+
+.property-exhibitor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+    .property-exhibitor img {
+        width: 100%;
+        margin-left: 0%;
+        box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1);
+        margin-top: 1.5%;
+        margin-bottom: 2%;
+        display: block;
+        width: 100%;
+        /* Ancho deseado */
+        height: 550px;
+        /* Alto deseado */
+        object-fit: cover;
+        /* Esto recortará las imágenes si no tienen la misma relación de aspecto */
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+    }
+
+
+
+
+        .property-exhibitor img.slide-in-right {
+            animation-name: slide-in-right;
+        }
+
+        .property-exhibitor img.slide-in-left {
+            animation-name: slide-in-left;
+        }
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(1%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-1%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Estilos para los botones de navegación en el mostrador de imágenes */
+.buttons {
+    position: absolute;
+    top: 42%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+    /* Estilos para los botones en el mostrador de imágenes */
+    .buttons button {
+        height: 100px;
+        width: 30px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+        /* Estilos al pasar el puntero sobre los botones en el mostrador de imágenes */
+        .buttons button:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+/* Estilos para el botón "Anterior" en el mostrador de imágenes */
+#prevBtn {
+    position: absolute;
+    left: 0;
+}
+
+/* Estilos para el botón "Siguiente" en el mostrador de imágenes */
+#nextBtn {
+    position: absolute;
+    right: 0;
+}
+
+/* Estilos para el contenedor de imágenes */
+.property-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 0%;
+}
+
+
+
+
+
+/* Estilos para el resumen de la propiedad */
+.summary-background {
+    background-color: white;
+    padding-bottom: 5%;
+}
+
+.property-summary {
+    width: 85%;
+    margin-left: 7.5%;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.property-summary-title {
+    margin-bottom: 5%;
+    margin-top: 5;
+    border-bottom: 1px solid #333;
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* Estilos para el mapa de la propiedad */
+.map-background {
+    background-color: white;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.property-map-title {
+    margin-bottom: 5%;
+    border-bottom: 1px solid #333;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.property-map {
+    text-align: centeleftr;
+}
+
+/* Estilos para el mapa en el mapa de la propiedad */
+#map {
+    height: 300px;
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+/* Estilos para el formulario de hipoteca */
+.property-finances input[type="button"] {
+    background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
+    width: 50%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: beige;
+    border: none;
+    font-size: 1.4em;
+}

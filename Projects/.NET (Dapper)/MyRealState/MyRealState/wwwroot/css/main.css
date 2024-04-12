@@ -1,0 +1,241 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.main-dropdown {
+    background-color: white;
+    border: 2px solid #9879D5;
+    color: #9879D5;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+    .main-dropdown:hover {
+        background-color: #fffff9;
+        border-color: #5A2DB4;
+        color: #5A2DB4
+    }
+.div-menu {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    background: #252727; /* Color base, celeste */
+    height: 35px;
+    font-weight: 300;
+}
+
+    .div-menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        margin: 50px;
+    }
+
+.main-color {
+    color: #5A2DB4;
+}
+
+.main-bg {
+    background-color: #5A2DB4;
+}
+
+.complementary-color {
+    color: #9879D5;
+}
+
+.complementary-bg {
+    background-color: #9879D5; 
+}
+
+
+header {
+    background-color: white;
+    color: #5A2DB4;
+}
+
+.btn-white {
+    color: black;
+}
+
+.btn-white:hover {
+    color: #808080;
+}
+
+.btn-delete {
+    color: black;
+}
+
+.btn-delete:hover {
+    color: salmon;
+}
+
+.btn-favorite {
+    color: #9879D5;
+}
+
+.btn-favorite:hover {
+    color: #5A2DB4;
+}
+
+.btn-main-bordered {
+    color: white;
+    border: 2px solid #5A2DB4;
+    background-color: #5A2DB4;
+    border-radius:0.5rem;
+}
+
+    .btn-main-bordered:hover {
+        color: white;
+        border: 2px solid #4D1D99;
+        background-color: #4D1D99;
+    }
+
+.form-bordered {
+    border-color: white;
+}
+
+.filter-field {
+    color: white;
+}
+
+.main-dropdown {
+    background-color: white;
+    border: 2px solid #5A2DB4;
+    color: #5A2DB4;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.main-dropdown:hover {
+    background-color: #fffff9;
+    border-color: #9879D5;
+    color: #9879D5
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.no-grayscale {
+    filter: grayscale(0%);
+}
+
+.drop-menu {
+    position: absolute;
+    left: 50%;
+    top:3%;
+    transform: translateX(-50%);
+    width: 26% !important;
+    z-index: 3;
+    background-color: white;
+    border: 1px solid #9879D5;
+    border-radius: 0.5rem;
+    display:none;
+    height: 87vh;
+}
+
+.drop-menu-form {
+    height: 85vh;
+    overflow-y: scroll
+}
+
+.main-border-bottom {
+    border-left: 0.2rem solid;
+    border-color: #9879D5;
+}
+
+.main-border-left {
+    border-left:0.2rem solid;
+    border-color: #9879D5;
+}
+.main-border {
+    border: 0.2rem solid;
+    border-color: #9879D5;
+    border-radius:2rem;;
+    width:15%;
+   
+}
+
+
+/*LATO----------*/
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.fluid-bg{
+    background-color: #F3F3F3;
+
+}

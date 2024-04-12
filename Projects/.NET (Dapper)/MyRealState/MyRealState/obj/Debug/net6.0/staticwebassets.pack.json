@@ -5,12 +5,88 @@
       "PackagePath": "staticwebassets\\MyRealState.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\css\\details-style.css",
+      "PackagePath": "staticwebassets\\css\\details-style.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\css\\my-properties.css",
+      "PackagePath": "staticwebassets\\css\\my-properties.css"
     },
     {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\1 - copia.jpg",
+      "PackagePath": "staticwebassets\\images\\1 - copia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\10.jpg",
+      "PackagePath": "staticwebassets\\images\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\2 - copia.jpg",
+      "PackagePath": "staticwebassets\\images\\2 - copia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\3 - copia.jpg",
+      "PackagePath": "staticwebassets\\images\\3 - copia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\4 - copia.jpg",
+      "PackagePath": "staticwebassets\\images\\4 - copia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\5 - copia.jpg",
+      "PackagePath": "staticwebassets\\images\\5 - copia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\9.jpg",
+      "PackagePath": "staticwebassets\\images\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\background\\empresa.jpg",
+      "PackagePath": "staticwebassets\\images\\background\\empresa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\background\\newyork.jpg",
+      "PackagePath": "staticwebassets\\images\\background\\newyork.jpg"
     },
     {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\icons\\apartment.png",
@@ -21,8 +97,44 @@
       "PackagePath": "staticwebassets\\images\\icons\\house.png"
     },
     {
-      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\icons\\inactive.png",
+      "PackagePath": "staticwebassets\\images\\icons\\inactive.png"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\icons\\location.png",
+      "PackagePath": "staticwebassets\\images\\icons\\location.png"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\icons\\rented.png",
+      "PackagePath": "staticwebassets\\images\\icons\\rented.png"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\icons\\to-rent.png",
+      "PackagePath": "staticwebassets\\images\\icons\\to-rent.png"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\property-plan.png",
+      "PackagePath": "staticwebassets\\images\\property-plan.png"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\prueba.jpg",
+      "PackagePath": "staticwebassets\\images\\prueba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\js\\create-property.js",
+      "PackagePath": "staticwebassets\\js\\create-property.js"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\js\\my-properties-map.js",
+      "PackagePath": "staticwebassets\\js\\my-properties-map.js"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\js\\my-properties.js",
+      "PackagePath": "staticwebassets\\js\\my-properties.js"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\js\\properties-catalog.js",
+      "PackagePath": "staticwebassets\\js\\properties-catalog.js"
     },
     {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\lib\\bootstrap\\LICENSE",

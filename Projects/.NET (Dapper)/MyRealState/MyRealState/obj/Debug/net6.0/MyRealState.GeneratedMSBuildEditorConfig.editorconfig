@@ -26,8 +26,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/MyRealState/MyRealState/Views/Properties/MyProperties.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydGllc1xNeVByb3BlcnRpZXMuY3NodG1s
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/MyRealState/MyRealState/Views/Property/Catalog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcQ2F0YWxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/MyRealState/MyRealState/Views/Property/ChangeStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcQ2hhbmdlU3RhdHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/MyRealState/MyRealState/Views/Property/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/MyRealState/MyRealState/Views/Property/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/MyRealState/MyRealState/Views/Property/MyProperties.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcTXlQcm9wZXJ0aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/MyRealState/MyRealState/Views/Property/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nicol/OneDrive/Documentos/GitHub/Nico-Banos-Martins-Portfolio/Projects/.NET (Dapper)/MyRealState/MyRealState/Views/Shared/Error.cshtml]

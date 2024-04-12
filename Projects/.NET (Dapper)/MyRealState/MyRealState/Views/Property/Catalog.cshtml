@@ -1,0 +1,522 @@
+﻿@using System.Web
+@model IEnumerable<MyRealState.Models.Property>
+
+@{
+    ViewData["Title"] = "PropertiesCatalog";
+}
+<div class="container-fluid p-0 fluid-bg " id="like-body">
+    <div class="row">
+        <div class="col-7 p-5 pt-3 pe-4" >
+            <div class="row py-1">
+                <div class="col">
+                    <button type="button" class="main-dropdown d-flex align-items-center justify-content-center w-100" id="toggle-btn">
+                        Filtro
+                        <span class="material-symbols-outlined main-color">
+                            tune
+                        </span>
+                    </button>
+                </div>
+                <div class="col-10">
+                    <p class="fs-5">
+                        Resultados de busqueda  
+                    </p>
+                </div>
+                
+            </div>
+            @foreach (var item in Model)
+            {
+                <div class="row property">
+                    <div class="card mb-3 w-100 p-0">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <a href="/Property/Details/@item.Id" class="text-dark text-decoration-none">
+                                    <img src="https://static.fotocasa.es/images/ads/b56602d1-e6b1-4e83-8ede-1d35aae297ca?rule=web_948x542" class="img-fluid rounded-start h-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-7 px-4 pt-4 pb-1">
+                                <div class="row" style="height:24vh;">
+                                    <a href="/Property/Details/@item.Id" class="text-dark text-decoration-none">
+                                        <div class="id" hidden>
+                                            @Html.DisplayFor(modelItem => item.Id)
+                                        </div>
+                                        <div class="row my-1">
+                                            <div class="col-8 fs-3 lato-bold-italic">
+                                                @Html.DisplayFor(modelItem => item.RentPrice) €<strong class="fs-6">/mes</strong>
+                                            </div>
+                                            <div class="col-4 text-end">
+                                                <img class="w-50 rounded-3" src="/images/background/empresa.jpg" />
+                                            </div>
+                                            <hr class="m-0" />
+                                        </div>
+                                        <div class="row my-1">
+                                            <div class="col-1 text-end type">
+                                                @Html.DisplayFor(modelItem => item.Type)
+                                            </div>
+                                            <div class="col p-0 text-start">
+                                                @Html.DisplayFor(modelItem => item.Address), <span class="city">@Html.DisplayFor(modelItem => item.City)</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3 text-secondary px-5">
+                                            <div class="col">
+                                                <span class="material-symbols-outlined">
+                                                    bed
+                                                </span> @Html.DisplayFor(modelItem => item.Bedrooms) habs.
+                                            </div>
+                                            <div class="col">
+                                                <span class="material-symbols-outlined">
+                                                    shower
+                                                </span> @Html.DisplayFor(modelItem => item.Bedrooms) baños
+                                            </div>
+                                            <div class="col">
+                                                <span class="material-symbols-outlined">
+                                                    crop
+                                                </span> @Html.DisplayFor(modelItem => item.Area) m²
+                                            </div>
+                                            <div class="col">
+                                                <span class="material-symbols-outlined">
+                                                    floor
+                                                </span> @Html.DisplayFor(modelItem => item.Floor)ª Planta
+                                            </div>
+                                        </div>
+                                        <div class="row my-2 text-secondary px-5">
+                                            @if (item.HasElevator == true)
+                                            {
+                                                <div class="col">
+                                                    <span class="material-symbols-outlined">
+                                                        elevator
+                                                    </span> Ascensor
+                                                </div>
+                                            }
+                                            @if (item.HasBalcony == true)
+                                            {
+                                                <div class="col">
+                                                    <span class="material-symbols-outlined">
+                                                        balcony
+                                                    </span> Balcón
+                                                </div>
+                                            }
+                                            @if (item.HasAirConditioning == true)
+                                            {
+                                                <div class="col">
+                                                    <span class="material-symbols-outlined">
+                                                        mode_fan
+                                                    </span> Aire ac..
+                                                </div>
+                                            }
+                                            @if (item.HasHeating == true)
+                                            {
+                                                <div class="col">
+                                                    <span class="material-symbols-outlined">
+                                                        fireplace
+                                                    </span> Calefac..
+                                                </div>
+                                            }
+
+                                        </div>
+                                        @{
+                                            var maxChars = 70; // Define la cantidad máxima de caracteres a mostrar antes de "leer más".
+                                            var description = item.Description; // Aquí asumimos que item.Description contiene el texto que quieres mostrar.
+                                            if (description.Length > maxChars)
+                                            {
+                                                <div class="row my-3">
+                                                    <div class="col">
+                                                        <p class="fs-6 ">
+                                                            @Html.Raw(HttpUtility.HtmlEncode(description.Substring(0, maxChars)) + "...")
+                                                            <a href="/Property/Details/@item.Id" class="text-dark">leer más</a>
+                                                        </p>
+                                                        <p class="fs-6 d-none">
+                                                            @Html.DisplayFor(modelItem => item.Description)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div class="row my-3">
+                                                    <div class="col">
+                                                        <p class="fs-6 ">
+                                                            @Html.DisplayFor(modelItem => item.Description)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            }
+                                        }
+
+                                        <script>
+                                            function showFullDescription(element) {
+                                                var fullDescription = element.closest('.col').querySelectorAll('.fw-light');
+                                                fullDescription[0].classList.add('d-none'); // Oculta el texto corto
+                                                fullDescription[1].classList.remove('d-none'); // Muestra el texto completo
+                                            }
+                                        </script>
+
+                                    </a>
+                                </div>
+                                <div class="row mb-2 p-0">
+                                    <div class="col">
+                                        <form method="post" action="/Property/ContactWithOwner/@item.Id">
+                                            <input type="hidden" name="id" value="@item.Id">
+                                            <button type="submit" class="btn btn-main-bordered d-flex align-items-center"><span class="material-symbols-outlined fs-4">mail</span></button>
+                                        </form>
+                                    </div>
+                                    <div class="col">
+                                        <form method="post" action="/Property/ContactWithOwner/@item.Id">
+                                            <input type="hidden" name="id" value="@item.Id">
+                                            <button type="submit" class="btn btn-main-bordered d-flex align-items-center"><span class="material-symbols-outlined fs-4">call</span></button>
+                                        </form>
+                                    </div>
+                                    <div class="offset-6 col">
+                                        <form method="post" action="/Property/ShareAdvertisement/@item.Id">
+                                            <input type="hidden" name="id" value="@item.Id">
+                                            <button type="submit" class="btn btn-white rounded-0 border-0 w-100"><span class="material-symbols-outlined fs-4">share</span></button>
+                                        </form>
+                                    </div>
+                                    <div class="col">
+                                        <form method="post" action="/Property/AddToFavorite/@item.Id">
+                                            <input type="hidden" name="id" value="@item.Id">
+                                            <button type="submit" class="btn btn-favorite rounded-0 border-0 w-100"><span class="material-symbols-outlined fs-4">favorite</span></button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                
+                                <div hidden class="coordinates">
+                                    @Html.DisplayFor(modelItem => item.Coordenates)
+                                </div>
+                                <div class="status" hidden>
+                                    @Html.DisplayFor(modelItem => item.Status)
+                                </div>
+                                <div class="adress" hidden>
+                                    @Html.DisplayFor(modelItem => item.Address)
+                                </div>
+
+                                <div class="city" hidden>
+                                    @Html.DisplayFor(modelItem => item.City)
+                                </div>
+                                <div class="country" hidden>
+                                    @Html.DisplayFor(modelItem => item.Country)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+
+        <div class="col-5 main-border-left p-0" style="z-index:1;">
+            <div class="container-fluid w-100 map sticky-top " style="height: 100vh" id="map"></div>
+        </div>
+    </div>
+</div>
+<div class="my-3 drop-menu px-0 py-3" id="drop-menu">
+    <form action="PropertiesCatalog" method="GET" class="p-4 drop-menu-form " >
+        <div class="row mb-1 p-0">
+            <div class="col text-center">
+                <label for="province" class="text-black fs-5 fw-bold">Provincia</label>
+            </div>
+            <div class="col text-center">
+                <label for="city" class="text-black fs-5 fw-bold">Ciudad</label>
+            </div>
+        </div>
+        <div class="row p-0">
+            <div class="col d-flex align-items-center">
+                <select class="main-dropdown w-100" id="tipo" name="tipo">
+                    <option value="">Indeferente</option>
+                    <option value="Hou">Pontevedra</option>
+                    <option value="Apt">Lugo</option>
+                </select>
+            </div>
+            <div class="col d-flex align-items-center">
+                <select class="main-dropdown w-100" id="tipo" name="tipo">
+                    <option value="">Indeferente</option>
+                    <option value="y">Vigo</option>
+                    <option value="s1">Lugo</option>
+                    <option value="s2">Monforte</option>
+                </select>
+            </div>
+        </div>
+        <hr />
+        <div class="row mb-1 p-0">
+            <div class="col text-center">
+                <label for="minPrice" class="text-black fs-5 fw-bold">Tipo de Inmueble</label>
+            </div>
+            <div class="col text-center">
+                <label for="minPrice" class="text-black fs-5 fw-bold">Duración</label>
+            </div>
+        </div>
+        <div class="row p-0">
+            <div class="col d-flex align-items-center">
+                <select class="main-dropdown w-100" id="tipo" name="tipo">
+                    <option value="">Indeferente</option>
+                    <option value="Hou">Casa</option>
+                    <option value="Apt">Piso</option>
+                </select>
+            </div>
+            <div class="col d-flex align-items-center">
+                <select class="main-dropdown w-100" id="tipo" name="tipo">
+                    <option value="">Indeferente</option>
+                    <option value="y">Año acádemico</option>
+                    <option value="s1">Semestre I</option>
+                    <option value="s2">Semestre II</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-1 p-0">
+            <label for="price" class="text-black fs-5 fw-bold">Precio alquiler</label>
+        </div>
+        <div class="row mb-1 p-0">
+            <div class="col text-center">
+                <label for="minPrice" class="text-black">Mínimo</label>
+            </div>
+            <div class="col text-center">
+                <label for="minPrice" class="text-black">Máximo</label>
+            </div>
+        </div>
+        <div class="row p-1">
+            <div class="col d-flex align-items-center" name="minPrice">
+                <input type="range" class="form-range m-0" min="0" max="1000" step="50" id="customRange3">
+            </div>
+            <div class="col d-flex align-items-center" name="minPrice">
+                <input type="range" class="form-range m-0" min="0" max="1000" step="50" id="customRange3">
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-1 p-0">
+            <div class="col text-center">
+                <label for="minPrice" class="text-black fs-5 fw-bold">Habitaciones</label>
+            </div>
+            <div class="col text-center">
+                <label for="minPrice" class="text-black fs-5 fw-bold">Baños</label>
+            </div>
+        </div>
+        <div class="row mb-3 p-0">
+            <div class="col d-flex align-items-center">
+                <select class="main-dropdown w-100" id="tipo" name="tipo">
+                    <option value="">Indeferente</option>
+                    <option value="1+">1+</option>
+                    <option value="2+">2+</option>
+                    <option value="3+">3+</option>
+                    <option value="4+">4+</option>
+                </select>
+            </div>
+            <div class="col d-flex align-items-center">
+                <select class="main-dropdown w-100" id="tipo" name="tipo">
+                    <option value="">Indeferente</option>
+                    <option value="1+">1+</option>
+                    <option value="2+">2+</option>
+                    <option value="3+">3+</option>
+                    <option value="4+">4+</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-1 p-0">
+            <label for="price" class="text-black fs-5 fw-bold">Superficie</label>
+        </div>
+        <div class="row mb-1 p-0">
+            <div class="col text-center">
+                <label for="minPrice" class="text-black">Mínima</label>
+            </div>
+            <div class="col text-center">
+                <label for="minPrice" class="text-black">Máxima</label>
+            </div>
+        </div>
+        <div class="row p-1">
+            <div class="col d-flex align-items-center" name="minPrice">
+                <input type="range" class="form-range m-0" min="0" max="1000" step="50" id="customRange3">
+            </div>
+            <div class="col d-flex align-items-center" name="minPrice">
+                <input type="range" class="form-range m-0" min="0" max="1000" step="50" id="customRange3">
+            </div>
+        </div>
+        <hr />
+        <div class="row mb-1 ">
+            <label for="price" class="text-black fs-5 fw-bold">Extras</label>
+            <div class="col px-5 py-2">
+                <div class="row mb-3">
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                elevator
+                            </span>
+                            Ascensor
+                        </label>
+                    </div>
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                chair
+                            </span>
+                            Amueblado
+                        </label>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                local_parking
+                            </span>
+                            Parking
+                        </label>
+                    </div>
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                pool
+                            </span>
+                            Piscina
+                        </label>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                balcony
+                            </span>
+                            Balcón
+                        </label>
+                    </div>
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                deck
+                            </span>
+                            Terraza
+                        </label>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                garage_home
+                            </span>
+                            Trastero
+                        </label>
+                    </div>
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                outdoor_garden
+                            </span>
+                            Jardín
+                        </label>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                mode_fan
+                            </span>
+                            Aire acond...
+                        </label>
+                    </div>
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                kitchen
+                            </span>
+                            Electrodom...
+                        </label>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                fireplace
+                            </span>
+                            Calefacción
+                        </label>
+                    </div>
+                    <div class="form-check form-switch col">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label d-flex align-items-center" for="flexSwitchCheckDefault">
+                            <span class="material-symbols-outlined mx-2">
+                                pets
+                            </span>
+                            Mascotas
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row mb-1 p-1">
+                <div class="col-6 text-center">
+                    <label for="minPrice" class="text-black fs-5 fw-bold">Fecha de publicación</label>
+                </div>
+                <div class="col-6 text-center">
+                    <label for="minPrice" class="text-black fs-5 fw-bold">Estado del inmueble</label>
+                </div>
+            </div>
+            <div class="row mb-3 p-3">
+                <div class="col-6 d-flex align-items-start">
+                    <select class="main-dropdown w-100" id="tipo" name="tipo">
+                        <option value="">Indeferente</option>
+                        <option value="1+">Hoy</option>
+                        <option value="2+">Esta semana</option>
+                        <option value="3+">Último mes</option>
+                        <option value="4+">Últimos 6 meses</option>
+                    </select>
+                </div>
+                <div class="col-6 align-items-center px-5">
+                    <div class="row mb-3">
+                        <div class="form-check form-switch col">
+                            <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                            <label class="form-check-label d-flex align-items-center"
+                                    for="flexSwitchCheckDefault">
+                                <span class="material-symbols-outlined ms-2">stars</span>
+                                <span class="material-symbols-outlined ">stars</span>
+                                <span class="material-symbols-outlined me-2">stars</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="form-check form-switch col">
+                            <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                            <label class="form-check-label d-flex align-items-center"
+                                    for="flexSwitchCheckDefault">
+                                <span class="material-symbols-outlined ms-2">stars</span>
+                                <span class="material-symbols-outlined ">stars</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="form-check form-switch col">
+                            <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                            <label class="form-check-label d-flex align-items-center"
+                                    for="flexSwitchCheckDefault">
+                                <span class="material-symbols-outlined ms-2">stars</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <button type="submit" class="btn main-bg text-white">Submit</button>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="~/js/my-properties-map.js"></script>
+<script type="text/javascript" src="~/js/my-properties.js"></script>
+<script type="text/javascript" src="~/js/properties-catalog.js"></script>
+
