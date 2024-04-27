@@ -84,27 +84,6 @@ namespace MyRealState.Controllers
         }
 
 
-        public ActionResult ChangeStatus(int id)
-        {
-            ViewBag.id = id;
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult ToRent(int id)
-        {
-            var property = _repository.GetProperty(id);
-            _repository.ToRent(property);
-            return RedirectToAction("MyProperties");
-        }
-
-        [HttpPost]
-        public ActionResult Inactive(int id)
-        {
-            var property = _repository.GetProperty(id);
-            _repository.Inactive(property);
-            return RedirectToAction("MyProperties");
-        }
 
 
 

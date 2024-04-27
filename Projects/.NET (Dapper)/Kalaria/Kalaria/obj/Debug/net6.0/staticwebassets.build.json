@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6DoSA4XaE5hfeL0ZN0avUVtwVcdoClRLNPJThPbTl6c=",
+  "Hash": "jwujvwoZjygduA0cRhvZVTh1RkqKxsMluD0UoUFWdtA=",
   "Source": "Kalaria",
   "BasePath": "_content/Kalaria",
   "Mode": "Default",
@@ -433,25 +433,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\interlaced.png"
-    },
-    {
-      "Identity": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Kalaria\\Kalaria\\wwwroot\\images\\logos\\footer-logo.png",
-      "SourceId": "Kalaria",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Kalaria\\Kalaria\\wwwroot\\",
-      "BasePath": "_content/Kalaria",
-      "RelativePath": "images/logos/footer-logo.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logos\\footer-logo.png"
     },
     {
       "Identity": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Kalaria\\Kalaria\\wwwroot\\images\\logos\\nav-logo.png",

@@ -85,10 +85,6 @@
       "PackagePath": "staticwebassets\\images\\interlaced.png"
     },
     {
-      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Kalaria\\Kalaria\\wwwroot\\images\\logos\\footer-logo.png",
-      "PackagePath": "staticwebassets\\images\\logos\\footer-logo.png"
-    },
-    {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\Kalaria\\Kalaria\\wwwroot\\images\\logos\\nav-logo.png",
       "PackagePath": "staticwebassets\\images\\logos\\nav-logo.png"
     },

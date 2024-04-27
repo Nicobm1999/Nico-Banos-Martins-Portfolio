@@ -48,11 +48,11 @@ body {
     }
 
 .main-color {
-    color: #5A2DB4;
+    color: #462091;
 }
 
 .main-bg {
-    background-color: #5A2DB4;
+    background-color: #462091;
 }
 
 .complementary-color {
@@ -95,16 +95,25 @@ header {
 
 .btn-main-bordered {
     color: white;
-    border: 2px solid #5A2DB4;
+    border: 1px solid #5A2DB4;
     background-color: #5A2DB4;
     border-radius:0.5rem;
 }
 
-    .btn-main-bordered:hover {
-        color: white;
-        border: 2px solid #4D1D99;
-        background-color: #4D1D99;
-    }
+.btn-main-bordered:hover {
+    color: white;
+    border: 1px solid #4D1D99;
+    background-color: #4D1D99;
+}
+
+.btn-type {
+    color: #6C757D;
+}
+
+.btn-type:hover {
+    color: black;
+
+}
 
 .form-bordered {
     border-color: white;
@@ -116,17 +125,26 @@ header {
 
 .main-dropdown {
     background-color: white;
-    border: 2px solid #5A2DB4;
-    color: #5A2DB4;
+    border: 1px solid #808080;
+    color: black;
     padding: 0.3rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 }
 
 .main-dropdown:hover {
-    background-color: #fffff9;
-    border-color: #9879D5;
-    color: #9879D5
+    background-color: white;
+    border-color: #505050;
+    color: black;
 }
+
+.map,#map {
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
 
 .grayscale {
     filter: grayscale(100%);
@@ -238,4 +256,49 @@ header {
 .fluid-bg{
     background-color: #F3F3F3;
 
+}
+
+
+.main-filter {
+    border-radius: 5rem;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.main-search {
+    background-color: #462091;
+    border: 2px solid #462091;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+    .main-search:hover {
+        background-color: #201070;
+        border-color: #201070;
+    }
+
+.main-reserve {
+    background-color: #462091;
+    border: 2px solid #462091;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+    .main-reserve:hover {
+        background-color: #201070;
+        border-color: #201070;
+    }
+
+.property-img-catalog {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.reserve-form {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }

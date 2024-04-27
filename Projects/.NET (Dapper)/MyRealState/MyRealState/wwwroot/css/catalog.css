@@ -1,0 +1,15 @@
+﻿
+.property-img-catalog {
+    height: 30vh;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+
+
+
+
+.carousel-item img {
+    filter: brightness(80%);
+    filter: contrast(110%)
+}

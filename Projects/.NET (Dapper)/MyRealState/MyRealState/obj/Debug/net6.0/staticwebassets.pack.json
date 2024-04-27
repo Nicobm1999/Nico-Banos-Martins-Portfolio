@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MyRealState.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\css\\catalog.css",
+      "PackagePath": "staticwebassets\\css\\catalog.css"
+    },
+    {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\css\\details-style.css",
       "PackagePath": "staticwebassets\\css\\details-style.css"
     },
@@ -113,6 +117,14 @@
       "PackagePath": "staticwebassets\\images\\icons\\to-rent.png"
     },
     {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\logos\\nav-logo.png",
+      "PackagePath": "staticwebassets\\images\\logos\\nav-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\logos\\nav-logo2.png",
+      "PackagePath": "staticwebassets\\images\\logos\\nav-logo2.png"
+    },
+    {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\images\\property-plan.png",
       "PackagePath": "staticwebassets\\images\\property-plan.png"
     },
@@ -123,6 +135,14 @@
     {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\js\\create-property.js",
       "PackagePath": "staticwebassets\\js\\create-property.js"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\js\\create.js",
+      "PackagePath": "staticwebassets\\js\\create.js"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\js\\details.js",
+      "PackagePath": "staticwebassets\\js\\details.js"
     },
     {
       "Id": "C:\\Users\\nicol\\OneDrive\\Documentos\\GitHub\\Nico-Banos-Martins-Portfolio\\Projects\\.NET (Dapper)\\MyRealState\\MyRealState\\wwwroot\\js\\my-properties-map.js",

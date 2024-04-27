@@ -1,211 +1,331 @@
 ﻿@using System.Web
 @model IEnumerable<MyRealState.Models.Property>
+<link rel="stylesheet" href="~/css/catalog.css" asp-append-version="true" />
 
 @{
-    ViewData["Title"] = "PropertiesCatalog";
+    ViewData["Title"] = "kalaria | Vacaciones en Galicia";
 }
-<div class="container-fluid p-0 fluid-bg " id="like-body">
-    <div class="row">
-        <div class="col-7 p-5 pt-3 pe-4" >
-            <div class="row py-1">
-                <div class="col">
-                    <button type="button" class="main-dropdown d-flex align-items-center justify-content-center w-100" id="toggle-btn">
-                        Filtro
-                        <span class="material-symbols-outlined main-color">
+
+<div class="container-fluid p-0 bg-white " id="like-body">
+    
+    <div class="row p-5 pt-0">
+        <div class="col-8 pt-0 pe-4" > 
+            <div class="row p-4 small">
+                <div class="col-1 d-flex align-items-center">
+                    <button type="button" class="main-dropdown d-flex align-items-center justify-content-center w-100 h-50" id="toggle-btn">
+                        <span class="material-symbols-outlined me-1">
                             tune
                         </span>
+                        Filtros                        
                     </button>
                 </div>
-                <div class="col-10">
-                    <p class="fs-5">
-                        Resultados de busqueda  
-                    </p>
+                <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    chalet
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Chalet
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    cottage
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Rural
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    castle
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Pazo
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    cabin
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Cabaña
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    apartment
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Piso
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    brightness_empty
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Vacío
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    brightness_empty
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Vacío
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    brightness_empty
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Vacío
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    brightness_empty
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Vacío
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    brightness_empty
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Vacío
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-type w-100" id="toggle-btn">
+                        <div class="row">
+                            <div class="col small">
+                                <span class="material-symbols-outlined">
+                                    brightness_empty
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col small">
+                                Vacío
+                            </div>
+                        </div>
+                    </button>
                 </div>
                 
             </div>
+            <div class="row">
             @foreach (var item in Model)
             {
-                <div class="row property">
-                    <div class="card mb-3 w-100 p-0">
-                        <div class="row g-0">
-                            <div class="col-5">
-                                <a href="/Property/Details/@item.Id" class="text-dark text-decoration-none">
-                                    <img src="https://static.fotocasa.es/images/ads/b56602d1-e6b1-4e83-8ede-1d35aae297ca?rule=web_948x542" class="img-fluid rounded-start h-100" alt="...">
+                    <div class="col-md-3 property p-4 pt-0">
+                        <div class="card mb-3 w-100 border-0 ">
+                            <div class="row">
+                                <div class="col rounded-3 p-0 ">
+                                    <div id="carouselExample-@item.Id" class="carousel slide" data-bs-interval="false">
+                                        <ol class="carousel-indicators">
+                                            <li data-bs-target="#carouselExample-@item.Id" data-bs-slide-to="0" class="active"></li>
+                                            <li data-bs-target="#carouselExample-@item.Id" data-bs-slide-to="1"></li>
+                                            <li data-bs-target="#carouselExample-@item.Id" data-bs-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner property-img-catalog">
+                                            <div class="carousel-item active">
+                                                <a href="/Property/Details/@item.Id" class="text-dark text-decoration-none d-block">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <img src="https://a0.muscache.com/im/pictures/f9eccd26-ed9d-4cb3-a2a7-628598598373.jpg?im_w=720" class="d-block w-auto img-fluid" style="max-height: 100%; max-width: 150%;" alt="...">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="/Property/Details/@item.Id" class="text-dark text-decoration-none d-block">
+                                                    <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
+                                                        <img src="https://a0.muscache.com/im/pictures/f9eccd26-ed9d-4cb3-a2a7-628598598373.jpg?im_w=720" class="d-block w-auto img-fluid" style="max-height: 100%; max-width: 150%;" alt="...">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="/Property/Details/@item.Id" class="text-dark text-decoration-none d-block">
+                                                    <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
+                                                        <img src="https://a0.muscache.com/im/pictures/f9eccd26-ed9d-4cb3-a2a7-628598598373.jpg?im_w=720" class="d-block w-auto img-fluid" style="max-height: 100%; max-width: 150%;" alt="...">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample-@item.Id" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample-@item.Id" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="row mt-2">
+                                <a href="/Property/Details/@item.Id" class="text-dark text-decoration-none col"> 
+                                    <div class="row my-1">
+                                        <div class="col-10 p-0 text-start fw-bold">
+                                            @Html.DisplayFor(modelItem => item.City), <span class="city">@Html.DisplayFor(modelItem => item.Province)</span>
+                                        </div>
+                                        <div class="col-2 p-0 small d-flex align-items-center justify-content-end">
+                                            <span class="material-symbols-outlined m-0 me-1 main-color">
+                                                stars
+                                            </span>
+                                            @Html.DisplayFor(modelItem => item.Id),45
+
+                                        </div>
+                                    </div>
+                                    <div class="row my-1">
+                                        <div class="col p-0 text-start text-muted">
+                                            @Html.DisplayFor(modelItem => item.Address)
+                                        </div>
+                                    </div>
+                                    <div class="row my-1">
+                                        <div class="col p-0 text-start text-muted">
+                                            Simulacion días
+                                        </div>
+                                    </div>
+                                    <div class="row my-1">
+                                        <div class="col p-0 text-start fw-bold">
+                                            @Html.DisplayFor(modelItem => item.RentPrice) € noche
+                                        </div>
+                                    </div>
+                                          
                                 </a>
                             </div>
-                            <div class="col-7 px-4 pt-4 pb-1">
-                                <div class="row" style="height:24vh;">
-                                    <a href="/Property/Details/@item.Id" class="text-dark text-decoration-none">
-                                        <div class="id" hidden>
-                                            @Html.DisplayFor(modelItem => item.Id)
-                                        </div>
-                                        <div class="row my-1">
-                                            <div class="col-8 fs-3 lato-bold-italic">
-                                                @Html.DisplayFor(modelItem => item.RentPrice) €<strong class="fs-6">/mes</strong>
-                                            </div>
-                                            <div class="col-4 text-end">
-                                                <img class="w-50 rounded-3" src="/images/background/empresa.jpg" />
-                                            </div>
-                                            <hr class="m-0" />
-                                        </div>
-                                        <div class="row my-1">
-                                            <div class="col-1 text-end type">
-                                                @Html.DisplayFor(modelItem => item.Type)
-                                            </div>
-                                            <div class="col p-0 text-start">
-                                                @Html.DisplayFor(modelItem => item.Address), <span class="city">@Html.DisplayFor(modelItem => item.City)</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-3 text-secondary px-5">
-                                            <div class="col">
-                                                <span class="material-symbols-outlined">
-                                                    bed
-                                                </span> @Html.DisplayFor(modelItem => item.Bedrooms) habs.
-                                            </div>
-                                            <div class="col">
-                                                <span class="material-symbols-outlined">
-                                                    shower
-                                                </span> @Html.DisplayFor(modelItem => item.Bedrooms) baños
-                                            </div>
-                                            <div class="col">
-                                                <span class="material-symbols-outlined">
-                                                    crop
-                                                </span> @Html.DisplayFor(modelItem => item.Area) m²
-                                            </div>
-                                            <div class="col">
-                                                <span class="material-symbols-outlined">
-                                                    floor
-                                                </span> @Html.DisplayFor(modelItem => item.Floor)ª Planta
-                                            </div>
-                                        </div>
-                                        <div class="row my-2 text-secondary px-5">
-                                            @if (item.HasElevator == true)
-                                            {
-                                                <div class="col">
-                                                    <span class="material-symbols-outlined">
-                                                        elevator
-                                                    </span> Ascensor
-                                                </div>
-                                            }
-                                            @if (item.HasBalcony == true)
-                                            {
-                                                <div class="col">
-                                                    <span class="material-symbols-outlined">
-                                                        balcony
-                                                    </span> Balcón
-                                                </div>
-                                            }
-                                            @if (item.HasAirConditioning == true)
-                                            {
-                                                <div class="col">
-                                                    <span class="material-symbols-outlined">
-                                                        mode_fan
-                                                    </span> Aire ac..
-                                                </div>
-                                            }
-                                            @if (item.HasHeating == true)
-                                            {
-                                                <div class="col">
-                                                    <span class="material-symbols-outlined">
-                                                        fireplace
-                                                    </span> Calefac..
-                                                </div>
-                                            }
 
-                                        </div>
-                                        @{
-                                            var maxChars = 70; // Define la cantidad máxima de caracteres a mostrar antes de "leer más".
-                                            var description = item.Description; // Aquí asumimos que item.Description contiene el texto que quieres mostrar.
-                                            if (description.Length > maxChars)
-                                            {
-                                                <div class="row my-3">
-                                                    <div class="col">
-                                                        <p class="fs-6 ">
-                                                            @Html.Raw(HttpUtility.HtmlEncode(description.Substring(0, maxChars)) + "...")
-                                                            <a href="/Property/Details/@item.Id" class="text-dark">leer más</a>
-                                                        </p>
-                                                        <p class="fs-6 d-none">
-                                                            @Html.DisplayFor(modelItem => item.Description)
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            }
-                                            else
-                                            {
-                                                <div class="row my-3">
-                                                    <div class="col">
-                                                        <p class="fs-6 ">
-                                                            @Html.DisplayFor(modelItem => item.Description)
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            }
-                                        }
 
-                                        <script>
-                                            function showFullDescription(element) {
-                                                var fullDescription = element.closest('.col').querySelectorAll('.fw-light');
-                                                fullDescription[0].classList.add('d-none'); // Oculta el texto corto
-                                                fullDescription[1].classList.remove('d-none'); // Muestra el texto completo
-                                            }
-                                        </script>
-
-                                    </a>
-                                </div>
-                                <div class="row mb-2 p-0">
-                                    <div class="col">
-                                        <form method="post" action="/Property/ContactWithOwner/@item.Id">
-                                            <input type="hidden" name="id" value="@item.Id">
-                                            <button type="submit" class="btn btn-main-bordered d-flex align-items-center"><span class="material-symbols-outlined fs-4">mail</span></button>
-                                        </form>
-                                    </div>
-                                    <div class="col">
-                                        <form method="post" action="/Property/ContactWithOwner/@item.Id">
-                                            <input type="hidden" name="id" value="@item.Id">
-                                            <button type="submit" class="btn btn-main-bordered d-flex align-items-center"><span class="material-symbols-outlined fs-4">call</span></button>
-                                        </form>
-                                    </div>
-                                    <div class="offset-6 col">
-                                        <form method="post" action="/Property/ShareAdvertisement/@item.Id">
-                                            <input type="hidden" name="id" value="@item.Id">
-                                            <button type="submit" class="btn btn-white rounded-0 border-0 w-100"><span class="material-symbols-outlined fs-4">share</span></button>
-                                        </form>
-                                    </div>
-                                    <div class="col">
-                                        <form method="post" action="/Property/AddToFavorite/@item.Id">
-                                            <input type="hidden" name="id" value="@item.Id">
-                                            <button type="submit" class="btn btn-favorite rounded-0 border-0 w-100"><span class="material-symbols-outlined fs-4">favorite</span></button>
-                                        </form>
-                                    </div>
-                                </div>
-
-                                
-                                <div hidden class="coordinates">
-                                    @Html.DisplayFor(modelItem => item.Coordenates)
-                                </div>
-                                <div class="status" hidden>
-                                    @Html.DisplayFor(modelItem => item.Status)
-                                </div>
-                                <div class="adress" hidden>
-                                    @Html.DisplayFor(modelItem => item.Address)
-                                </div>
-
-                                <div class="city" hidden>
-                                    @Html.DisplayFor(modelItem => item.City)
-                                </div>
-                                <div class="country" hidden>
-                                    @Html.DisplayFor(modelItem => item.Country)
-                                </div>
+                            <div class="id" hidden>
+                                @Html.DisplayFor(modelItem => item.Id)
                             </div>
+                            <div hidden class="coordinates">
+                                @Html.DisplayFor(modelItem => item.Coordenates)
+                            </div>
+                            <div class="status" hidden>
+                                @Html.DisplayFor(modelItem => item.Status)
+                            </div>
+                            <div class="adress" hidden>
+                                @Html.DisplayFor(modelItem => item.Address)
+                            </div>
+
+                            <div class="city" hidden>
+                                @Html.DisplayFor(modelItem => item.City)
+                            </div>
+                            <div class="country" hidden>
+                                @Html.DisplayFor(modelItem => item.Country)
+                            </div>
+                             
                         </div>
                     </div>
-                </div>
+                    
+                
 
             }
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <nav aria-label="Page navigation example text-black">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link text-black" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link text-black" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link text-black" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link text-black" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link text-black" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            
         </div>
 
-        <div class="col-5 main-border-left p-0" style="z-index:1;">
-            <div class="container-fluid w-100 map sticky-top " style="height: 100vh" id="map"></div>
+        <div class="col-4  p-0 py-4" style="z-index:1;">
+            <div class="container-fluid w-100 map sticky-top" id="map"></div>
         </div>
     </div>
 </div>

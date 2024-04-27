@@ -16,20 +16,89 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow">
-            <div class="container-fluid">
-                <a class="navbar-brand main-color " asp-area="" asp-controller="Home" asp-action="Index">MyRealState</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav class="row box-shadow border-bottom p-5 pb-0">
+            <div class="col-2 px-5 pb-3">
+                <a class="navbar-brand main-color " asp-area="" asp-controller="Property" asp-action="Catalog"><img src="/images/logos/nav-logo2.png" class="w-100  " /></a>
+            </div>
+            <div class="col-6 px-5 pb-3 offset-1">
+                <form class="main-filter ps-4 small">
+                    <div class="row w-100 d-flex align-items-center">
+                        <div class="col ">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="destino">Destino deseado</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <select name="destino" class="form-select border-0 w-100 h-100 p-0">
+                                        <option selected>Destino deseado</option>
+                                        <option value="coruna">A Coruña</option>
+                                        <option value="lugo">Lugo</option>
+                                        <option value="ourense">Ourense</option>
+                                        <option value="pontevedra">Pontevedra</option>
+                                        <option disabled>───────────────</option>
+                                        <option value="costa_morte">Costa da Morte</option>
+                                        <option value="rias_baixas">Rías Baixas</option>
+                                        <option value="ribeira_sacra">Ribeira Sacra</option>
+                                        <option value="rias_altas">Rías Altas</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col border-start">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="destino">Llegada</label>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="date" class="w-100 border-0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col border-start">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="destino">Salida</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="date" class="w-100 border-0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 border-start">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="destino">Viajeros</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="number" class="w-100 border-0" placeholder="Número de viajeros">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 border-start d-flex align-items-center justify-content-end">
+                            <button type="button" class="main-search d-flex align-items-center justify-content-center  h-100">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-1 offset-2 d-flex align-items-center justify-content-end">
+                <button type="button" class="btn main-color  d-flex align-items-center justify-content-center w-100  h-100">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">                        
-                        <li>
-                            <a class="nav-link main-color " asp-action="Catalog" asp-controller="Property">Cátalogo de Viviendas</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </nav>
     </header>

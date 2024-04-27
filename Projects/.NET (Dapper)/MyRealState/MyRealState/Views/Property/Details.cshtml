@@ -4,232 +4,274 @@
     ViewData["Title"] = "Details";
 }
 
-<div class="container">
-    
-    <div class="row">
-        <div class="col-9">
-            <div class="row">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/images/1.jpg" class="d-block w-100" alt="Imagen 1">
+<div class="container-fluid bg-white">
+    <div class="container bg-white">
+        
+        <div class="row">
+            <div class="col-9 my-3 mb-5">               
+                <div class="row">
+                    <div id="carouselExample-@Html.DisplayFor(model => model.Id)" class="col carousel slide" data-bs-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExample-@Html.DisplayFor(model => model.Id)" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselExample-@Html.DisplayFor(model => model.Id)" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselExample-@Html.DisplayFor(model => model.Id)" data-bs-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner property-img-catalog">
+                            <div class="carousel-item active">
+                                <a href="/Property/Details/@Html.DisplayFor(model => model.Id)" class="text-dark text-decoration-none d-block">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-36575691/original/af91632a-e859-42b3-a37f-8bdcdc696aef.jpeg?im_w=1200" class="d-block w-100 img-fluid" alt="...">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="/Property/Details/@Html.DisplayFor(model => model.Id)" class="text-dark text-decoration-none d-block">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-36575691/original/50d4b7aa-e5d1-4cd0-9ac3-d8cf6b0351fd.jpeg?im_w=1440" class="d-block w-100 img-fluid" alt="...">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="/Property/Details/@Html.DisplayFor(model => model.Id)" class="text-dark text-decoration-none d-block">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-36575691/original/2dd9718f-21d3-422e-91e6-3668ff3d7d2f.jpeg?im_w=1440" class="d-block w-100 img-fluid" alt="...">
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="/images/2.jpg" class="d-block w-100" alt="Imagen 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/3.jpg" class="d-block w-100" alt="Imagen 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/4.jpg" class="d-block w-100" alt="Imagen 4">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/5.jpg" class="d-block w-100" alt="Imagen 5">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/6.jpg" class="d-block w-100" alt="Imagen 6">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/7.jpg" class="d-block w-100" alt="Imagen 7">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/8.jpg" class="d-block w-100" alt="Imagen 8">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/9.jpg" class="d-block w-100" alt="Imagen 9">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/10.jpg" class="d-block w-100" alt="Imagen 10">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/property-plan.png" class="d-block w-100" alt="Imagen 11">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/prueba.jpg" class="d-block w-100" alt="Imagen 12">
-                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample-@Html.DisplayFor(model => model.Id)" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample-@Html.DisplayFor(model => model.Id)" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-
-
-
-
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="row">
-                        <p class="fs-2">Características del inmueble</p>
+                <div class="row px-4 pt-2">
+                    <div class="col">
+                        <div class="row pb-1">
+                            <div class="col-10 fs-3 d-flex align-items-center">
+                                Nombre de la propiedad
+                            </div>                           
+                            <div class="col-1 d-flex align-items-center">
+                                <a href="/Property/Details/ @Html.DisplayFor(model => model.Id)" class="btn btn-white rounded-0 border-0 w-100 "><span class="material-symbols-outlined">favorite</span></a>
+                            </div>
+                            <div class="col-1 d-flex align-items-center">
+                                <a href="/Property/Details/ @Html.DisplayFor(model => model.Id)" class="btn btn-white rounded-0 border-0 w-100 "><span class="material-symbols-outlined">share</span></a>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="row px-4 pt-2">
+                    <div class="col-3 d-flex align-items-center text-muted">
+                        <span class="material-symbols-outlined me-1">flag</span>@Html.DisplayFor(model => model.Type) en @Html.DisplayFor(model => model.City), @Html.DisplayFor(model => model.Province)
+                    </div>
+                </div>
+                <div class="row px-4 pt-2" id="offer">
+                    <div class="col">
+                        <div class="row mt-3">
+                        <p class="fs-2">¿Qué ofrece?</p>
                         <hr />
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">Referencia</div>
-                                <div class="col">Año de reforma</div>
-                                <div class="col">Tipo de casa</div>
-                                <div class="col">Alturas del edificio</div>
-                                <div class="col">Cert. Energética</div>
+                        <div class="row small text-muted">
+                            <div class="col-2 p-3" id="swimming-pool-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="swimming-pool" data-value="@Model.HasSwimmingPool.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">pool</span> Piscina
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col">C010309</div>
-                                <div class="col">2023</div>
-                                <div class="col">Casa</div>
-                                <div class="col">2 plantas</div>
-                                <div class="col">No especificado</div>
+
+                            <div class="col-2 p-3" id="garden-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="garden" data-value="@Model.HasGarden.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">fence</span> Jardín
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col">Superficie</div>
-                                <div class="col">Habitaciones</div>
-                                <div class="col">Calefacción</div>
-                                <div class="col">Garaje incluido</div>
-                                <div class="col">Trastero</div>
+
+                            <!-- Repite el mismo patrón para los otros elementos -->
+
+                            <div class="col-2 p-3" id="garage-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="garage" data-value="@Model.HasGarage.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">garage</span> Garage
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col">0 m²</div>
-                                <div class="col">3</div>
-                                <div class="col">Si, Sin especificar</div>
-                                <div class="col">No especificado</div>
-                                <div class="col">No especificado</div>
+
+                            <div class="col-2 p-3" id="security-system-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="security-system" data-value="@Model.HasSecuritySystem.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">detector_alarm</span> Alarma
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col">Bodega</div>
-                                <div class="col">Finca</div>
-                                <div class="col">Luminoso</div>
-                                <div class="col">Admite mascotas</div>
-                                <div class="col">Comunidad incl.</div>
+
+                            <div class="col-2 p-3" id="heating-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="heating" data-value="@Model.HasHeating.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">fireplace</span> Calefacción
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col">No especificado</div>
-                                <div class=" col">No especificado</div>
-                                <div class=" col">No especificado</div>
-                                <div class="col">No especificado</div>
-                                <div class="col">No especificado</div>
+
+                            <div class="col-2 p-3" id="pets-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="pets" data-value="@Model.HasPets.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">pets</span> Mascotas
+                                    </div>
+                                </div>
                             </div>
-                            
+
+                            <div class="col-2 p-3" id="appliances-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="appliances" data-value="@Model.HasAppliances.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">kitchen</span> Electrodo..
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-2 p-3" id="air-conditioning-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="air-conditioning" data-value="@Model.HasAirConditioning.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">mode_fan</span> Aire acondi..
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-2 p-3" id="elevator-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="elevator" data-value="@Model.HasElevator.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">elevator</span> Ascensor
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-2 p-3" id="security-door-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="security-door" data-value="@Model.HasSecurityDoor.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">door_front</span> Puerta Seg..
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-2 p-3" id="gated-community-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="gated-community" data-value="@Model.IsInGatedCommunity.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">other_houses</span> Urbanización
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-2 p-3" id="balcony-sym">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center" id="balcony" data-value="@Model.HasBalcony.ToString().ToLower()">
+                                        <span class="material-symbols-outlined me-1">balcony</span> Balcón
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+                </div>
+                </div>
+                <div class="row px-4 pt-2">
+                    <div class="col">
+                        <div class="row mt-3">                        
+                            <p class="fs-2">El Alojamiento</p>
+                            <hr />
+                        </div>
+                        <div class="row">
+                            <p>
+                                @Html.DisplayFor(model => model.Description)
+                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="row px-4 pt-2">
+                    <div class="col">
+                        <div class="row">
+                            <p class="fs-2">¿Dónde está?</p>
+                            <hr />
+                        </div>
+                        <div class="row mb-3" id="place-description">
+                            <p>
+                                @Html.DisplayFor(model => model.Surroundings)
+                            </p>
+                        </div>              
+                        <div class="container-fluid w-100 map" style="height: 40vh;" id="map">
 
-            </div>
-           
-
-            <div class="row">
-                <div class="col">
-                    <div class="row">                        
-                        <p class="fs-2">Descripción del inmueble</p>
-                        <hr />
-                    </div>
-                    <div class="row">
-                        <p>
-                            @Html.DisplayFor(model => model.Description)
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="row">
-                        <p class="fs-2">Descripción del barrio</p>
-                        <hr />
-                    </div>
-                    <div class="row">
-                        <p>
-                            @Html.DisplayFor(model => model.Surroundings)
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-2">
-                <div class="col">
-                    <div class="row">
-                        <div class="col">
-                            <p class="fs-2">Localización del inmueble</p>
                         </div>
                     </div>
-                    <div class="container-fluid w-100 map" style="height: 40vh;" id="map">
-
-                    </div>
                 </div>
-            </div>
 
 
         
-        </div>
-        <div class="col-3 p-5">
-            <form action="Contact" method="post">
-                <div class="row">
-                    <div class="col">
-                        <a href="/Property/Details/ @Html.DisplayFor(model => model.Id)" class="btn btn-white rounded-0 border-0 w-100 "><span class="material-symbols-outlined">print</span></a>
+            </div>
+            <div class="col-3">
+                <form asp-action="Reserve" asp-controller="Property" method="post" class="reserve-form small sticky-top mt-3">
+                    <div class="row mt-2">
+                        <p class="fs-3 lato-bold text-center">RESERVA</p>
                     </div>
-                    <div class="col">
-                        <a href="/Property/Details/ @Html.DisplayFor(model => model.Id)" class="btn btn-white rounded-0 border-0 w-100 "><span class="material-symbols-outlined">star</span></a>
+                    <div class="row mt-2">
+                        @Html.DisplayFor(model => model.RentPrice) € noche
                     </div>
-                    <div class="col">
-                        <a href="/Property/Details/ @Html.DisplayFor(model => model.Id)" class="btn btn-white rounded-0 border-0 w-100 "><span class="material-symbols-outlined">share</span></a>
+                    <div class="row mt-2">
+                        <label for="Email">Llegada</label>
+                        <input type="date" name="Email" />
                     </div>
-                </div>
-
-                <div class="row">
-                    <p class="fs-3 lato-bold-italic">CONTACTA</p>
-                </div>
-                <div class="row">
-                    <label for="Name">Nombre</label>
-                    <input type="text" name="Name"/>
-                </div>
-                <div class="row">
-                    <label for="Email">Email</label>
-                    <input type="email" name="Email" />
-                </div>
-                <div class="row">
-                    <label for="Phone">Télefono</label>
-                    <input type="tel" name="Phone" />
-                </div>
-                <div class="row">
-                    <label for="Subject">Asunto</label>
-                    <select name="Subject" id="">
-                        <option value="">¿Cuál es el asunto de tu contacto?</option>
-                        <option value="">Solicitar una visita a la propiedad</option>
-                        <option value="">Solicitar dirección exacta de la propiedad</option>
-                        <option value="">Solicitar más información</option>
-                        <option value="">Solicitar más fotos</option>
-                        <option value="">Otro</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <input type="checkbox"> Quiero recibir información sobre propiedades similares <br>
-                </div>
-                <div class="row">
-                    <input type="checkbox"> Acepto las condiciones de uso, la información básica de Protección de
-                    Datos y darme de alta en Share&Live
-                </div>
-                <div class="row">
-                <input type="submit" value="Contactar" />
-                </div>
-            </form>
+                    <div class="row mt-2">
+                        <label for="Phone">Salida</label>
+                        <input type="date" name="Phone" />
+                    </div>
+                    <div class="row mt-2">
+                        <label for="Subject">Viajeros</label>
+                        <input type="number"/>
+                    </div>
+                    <div class="row mt-2 ">
+                        <div class="col-9 ">
+                            @Html.DisplayFor(model => model.RentPrice) x X noches 
+                        </div>
+                        <div class="col-3 text-end">
+                            230 €
+                        </div>
+                    </div>
+                    <div class="row mt-2 ">
+                        <div class="col-9 ">
+                            Gastos de limpieza
+                        </div>
+                        <div class="col-3 text-end">
+                            230 €
+                        </div>
+                    </div>
+                    <div class="row mt-2 ">
+                        <div class="col-9 ">
+                           Comisión de servicio kalaria
+                        </div>
+                        <div class="col-3 text-end">
+                            10% t
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                    <input type="submit" value="Reservar" class="main-reserve" />
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
+    <div hidden class="coordinates"> @Html.DisplayFor(model => model.Coordenates)</div>
+    <div hidden class="id"> @Html.DisplayFor(model => model.Id)</div>
+    <div hidden class="city"> @Html.DisplayFor(model => model.City)</div>
+    <div hidden class="country"> @Html.DisplayFor(model => model.Country)</div>
+    <div hidden class="adress"> @Html.DisplayFor(model => model.Address)</div>
 
+</div>
+<script type="text/javascript" src="~/js/details.js"></script>
 <script type="text/javascript" src="~/js/my-properties-map.js"></script>
 <script type="text/javascript" src="~/js/my-properties.js"></script>
